@@ -4,7 +4,8 @@ const Blockchain = {
     provider.send(
       {
         jsonrpc: "2.0",
-        method: "eth_getBlockByNumber",
+        //method: "eth_getBlockByNumber",
+        method: "cfx_getBlock",
         params,
         id: Date.now()
       },
@@ -17,7 +18,8 @@ const Blockchain = {
     provider.send(
       {
         jsonrpc: "2.0",
-        method: "eth_getBlockByHash",
+        //method: "eth_getBlockByHash",
+        method: "cfx_getBlock",
         params,
         id: Date.now()
       },

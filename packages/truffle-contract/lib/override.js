@@ -78,7 +78,7 @@ var override = {
         return;
       }
 
-      constructor.web3.eth.getTransactionReceipt(context.transactionHash)
+      constructor.web3.cfx.getTransactionReceipt(context.transactionHash)
         .then(result => {
           if (!result) return;
 
@@ -98,10 +98,12 @@ var override = {
     };
 
     // Start polling
-    let currentPollingBlock = await constructor.web3.eth.getBlockNumber();
+    //let currentPollingBlock = await constructor.web3.eth.getBlockNumber();
+    let currentPollingBlock = await constructor.web3.cfx.getBlockByEpochNumber();
 
     const pollID = setInterval(async() => {
-      const newBlock = await constructor.web3.eth.getBlockNumber();
+      //const newBlock = await constructor.web3.eth.getBlockNumber();
+      const newBlock = await constructor.web3.cfx.getBlockByEpochNumber();
 
       if(newBlock > currentPollingBlock){
         currentPollingBlock = newBlock;

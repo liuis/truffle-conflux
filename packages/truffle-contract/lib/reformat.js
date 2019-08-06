@@ -2,7 +2,8 @@
  * Utilities for reformatting web3 outputs
  */
 const BigNumber = require("bignumber.js/bignumber");
-const web3Utils = require("web3-utils");
+//const web3Utils = require("web3-utils");
+const web3Utils = require("conflux-web-utils");
 
 /**
  * Converts from string to other number format

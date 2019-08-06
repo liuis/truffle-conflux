@@ -65,6 +65,7 @@
     "truffle-workflow-compile": "^2.1.0",
     "universal-analytics": "^0.4.17",
     "web3": "^1.2.0",
+    "conflux-web": "0.1.18-alpha.0",
     "xregexp": "^4.2.4",
     "yargs": "^8.0.2"
   },

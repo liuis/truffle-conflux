@@ -1,5 +1,6 @@
 const utils = require("../utils");
-const web3Utils = require("web3-utils");
+//const web3Utils = require("web3-utils");
+const web3Utils = require("conflux-web-utils");
 
 module.exports = {
   contract_name: {

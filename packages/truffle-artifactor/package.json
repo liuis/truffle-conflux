@@ -23,7 +23,8 @@
     "require-nocache": "^1.0.0",
     "temp": "^0.8.3",
     "truffle-contract": "^4.0.27",
-    "web3": "^1.2.0"
+    "web3": "^1.2.0",
+    "conflux-web": "0.1.18-alpha.0"
   },
   "publishConfig": {
     "access": "public"
