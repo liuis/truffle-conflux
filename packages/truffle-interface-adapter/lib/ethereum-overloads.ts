@@ -17,12 +17,15 @@ const overrides = {
 // have a `method` property, which it does
   "getBlock": (web3: Web3Shim) => {
   // @ts-ignore
-  const _oldFormatter = web3.eth.getBlock.method.outputFormatter;
+  //const _oldFormatter = web3.eth.getBlock.method.outputFormatter;
+  const _oldFormatter = web3.cfx.getBlock.method.outputFormatter;
 
   // @ts-ignore
-  web3.eth.getBlock.method.outputFormatter = block => {
+  //web3.eth.getBlock.method.outputFormatter = block => {
+  web3.cfx.getBlock.method.outputFormatter = block => {
     // @ts-ignore
-    let result = _oldFormatter.call(web3.eth.getBlock.method, block);
+    //let result = _oldFormatter.call(web3.eth.getBlock.method, block);
+    let result = _oldFormatter.call(web3.cfx.getBlock.method, block);
 
     // Perhaps there is a better method of doing this,
     // but the raw hexstrings work for the time being
@@ -36,13 +39,16 @@ const overrides = {
   "getTransaction": (web3: Web3Shim) => {
   const _oldTransactionFormatter =
     // @ts-ignore
-    web3.eth.getTransaction.method.outputFormatter;
+    //web3.eth.getTransaction.method.outputFormatter;
+    web3.cfx.getTransaction.method.outputFormatter;
 
   // @ts-ignore
-  web3.eth.getTransaction.method.outputFormatter = tx => {
+  //web3.eth.getTransaction.method.outputFormatter = tx => {
+  web3.cfx.getTransaction.method.outputFormatter = tx => {
     let result = _oldTransactionFormatter.call(
       // @ts-ignore
-      web3.eth.getTransaction.method,
+      //web3.eth.getTransaction.method,
+      web3.cfx.getTransaction.method,
       tx
     );
 
@@ -58,13 +64,15 @@ const overrides = {
   "getTransactionReceipt": (web3: Web3Shim) => {
     const _oldTransactionReceiptFormatter =
     // @ts-ignore
-    web3.eth.getTransactionReceipt.method.outputFormatter;
+    //web3.eth.getTransactionReceipt.method.outputFormatter;
+    web3.cfx.getTransactionReceipt.method.outputFormatter;
 
   // @ts-ignore
   web3.eth.getTransactionReceipt.method.outputFormatter = receipt => {
     let result = _oldTransactionReceiptFormatter.call(
       // @ts-ignore
-      web3.eth.getTransactionReceipt.method,
+      //web3.eth.getTransactionReceipt.method,
+      web3.cfx.getTransactionReceipt.method,
       receipt
     );
 
