@@ -16,7 +16,8 @@ import * as actions from "../actions";
 import * as session from "lib/session/actions";
 
 import BN from "bn.js";
-import Web3 from "web3"; //just for utils!
+//import Web3 from "web3"; //just for utils!
+const web3Utils = require("conflux-web-utils");
 import * as DecodeUtils from "truffle-decode-utils";
 
 import Web3Adapter from "../adapter";
@@ -69,7 +70,8 @@ function* fetchTransactionInfo(adapter, { txHash }) {
       })
     );
   } else {
-    let storageAddress = Web3.utils.isAddress(receipt.contractAddress)
+    //let storageAddress = Web3.utils.isAddress(receipt.contractAddress)
+    let storageAddress = web3Utils.isAddress(receipt.contractAddress)
       ? receipt.contractAddress
       : DecodeUtils.EVM.ZERO_ADDRESS;
     yield put(

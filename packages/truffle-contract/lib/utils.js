@@ -1,7 +1,9 @@
 const debug = require("debug")("contract:utils"); // eslint-disable-line no-unused-vars
-const web3Utils = require("web3-utils");
+//const web3Utils = require("web3-utils");
+const web3Utils = require("conflux-web-utils");
 const bigNumberify = require("ethers/utils/bignumber").bigNumberify;
-const abi = require("web3-eth-abi");
+//const abi = require("web3-eth-abi");
+const abi = require("conflux-web-abi");
 const BlockchainUtils = require("truffle-blockchain-utils");
 const reformat = require("./reformat");
 

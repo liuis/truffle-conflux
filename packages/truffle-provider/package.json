@@ -16,7 +16,8 @@
   "dependencies": {
     "truffle-error": "^0.0.5",
     "truffle-interface-adapter": "^0.2.2",
-    "web3": "^1.2.0"
+    "web3": "^1.2.0",
+    "conflux-web":"0.1.19-alpha.0"
   },
   "devDependencies": {
     "ganache-core": "2.5.7",

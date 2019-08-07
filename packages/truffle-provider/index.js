@@ -1,5 +1,6 @@
 var debug = require("debug")("provider"); // eslint-disable-line no-unused-vars
-var Web3 = require("web3");
+//var Web3 = require("web3");
+var Web3 = require("conflux-web");
 var Web3Shim = require("truffle-interface-adapter").Web3Shim;
 
 var wrapper = require("./wrapper");
@@ -36,7 +37,8 @@ module.exports = {
       "Could not connect to your RPC client. Please check your RPC configuration."
     );
 
-    web3.eth
+    //web3.eth
+    web3.cfx
       .getCoinbase()
       .then(coinbase => callback(null, coinbase))
       .catch(() => callback(fail, null));

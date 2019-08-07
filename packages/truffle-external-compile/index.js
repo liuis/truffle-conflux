@@ -9,7 +9,8 @@ const fs = require("fs");
 const expect = require("truffle-expect");
 const Schema = require("truffle-contract-schema");
 const web3 = {};
-web3.utils = require("web3-utils");
+//web3.utils = require("web3-utils");
+web3.utils = require("conflux-web-utils");
 
 const DEFAULT_ABI = [
   {

@@ -1,4 +1,5 @@
-const Web3 = require("web3");
+//const Web3 = require("web3");
+const Web3 = require("conflux-web");
 const Web3Shim = require("truffle-interface-adapter").Web3Shim;
 const TruffleError = require("truffle-error");
 const expect = require("truffle-expect");
@@ -32,8 +33,10 @@ const Environment = {
       networkType: config.networks[config.network].type
     });
 
-    const accounts = await web3.eth.getAccounts();
-    const block = await web3.eth.getBlock("latest");
+    //const accounts = await web3.eth.getAccounts();
+    //const block = await web3.eth.getBlock("latest");
+    const accounts = await web3.cfx.getAccounts();
+    const block = await web3.cfx.getBlock("latest");
 
     const upstreamNetwork = config.network;
     const upstreamConfig = config.networks[upstreamNetwork];
@@ -76,13 +79,15 @@ const helpers = {
   setFromOnConfig: async (config, web3) => {
     if (config.from) return;
 
-    const accounts = await web3.eth.getAccounts();
+    //const accounts = await web3.eth.getAccounts();
+    const accounts = await web3.cfx.getAccounts();
     config.networks[config.network].from = accounts[0];
   },
 
   detectAndSetNetworkId: async (config, web3) => {
     const configNetworkId = config.networks[config.network].network_id;
-    const providerNetworkId = await web3.eth.net.getId();
+    //const providerNetworkId = await web3.eth.net.getId();
+    const providerNetworkId = await web3.cfx.net.getId();
     if (configNetworkId !== "*") {
       // Ensure the network id matches the one in the config for safety
       if (providerNetworkId.toString() !== configNetworkId.toString()) {

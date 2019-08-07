@@ -2,7 +2,8 @@ import debugModule from "debug";
 const debug = debugModule("decode-utils:evm");
 
 import BN from "bn.js";
-import Web3 from "web3";
+//import Web3 from "web3";
+const Web3 = require("conflux-web");
 import { Conversion as ConversionUtils } from "./conversion";
 import { Constants } from "./constants";
 

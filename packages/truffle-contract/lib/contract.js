@@ -1,6 +1,8 @@
 const debug = require("debug")("contract:contract"); // eslint-disable-line no-unused-vars
-let Web3 = require("web3");
-const webUtils = require("web3-utils");
+//let Web3 = require("web3");
+let Web3 = require("conflux-web");
+//const webUtils = require("web3-utils");
+const webUtils = require("conflux-web-utils");
 const execute = require("./execute");
 const {
   bootstrap,
@@ -22,7 +24,8 @@ if (typeof Web3 === "object" && Object.keys(Web3).length === 0) {
 
     // Disambiguate between .at() and .new()
     if (typeof contract === "string") {
-      var web3Instance = new constructor.web3.eth.Contract(constructor.abi);
+      //var web3Instance = new constructor.web3.eth.Contract(constructor.abi);
+      var web3Instance = new constructor.web3.cfx.Contract(constructor.abi);
       web3Instance.options.address = contract;
       contract = web3Instance;
     }

@@ -1,5 +1,6 @@
 const debug = require("debug")("reporters:migrations:reporter"); // eslint-disable-line no-unused-vars
-const web3Utils = require("web3-utils");
+//const web3Utils = require("web3-utils");
+const web3Utils = require("conflux-web-utils");
 const readline = require("readline");
 const ora = require("ora");
 

@@ -25,7 +25,8 @@ var execute = {
       if (params.gas) return accept(params.gas);
       if (!constructor.autoGas) return accept();
 
-      web3.eth
+      //web3.eth
+      web3.cfx
         .estimateGas(params)
         .then(gas => {
           const bestEstimate = utils.multiplyBigNumberByDecimal(
@@ -187,7 +188,8 @@ var execute = {
             return;
           }
 
-          deferred = web3.eth.sendTransaction(params);
+          //deferred = web3.eth.sendTransaction(params);
+          deferred = web3.cfx.sendTransaction(params);
           deferred.catch(override.start.bind(constructor, context));
           handlers.setup(deferred, context);
         })
@@ -229,7 +231,8 @@ var execute = {
             arguments: args
           };
 
-          var contract = new web3.eth.Contract(constructor.abi);
+          //var contract = new web3.eth.Contract(constructor.abi);
+          var contract = new web3.cfx.Contract(constructor.abi);
           params.data = contract.deploy(options).encodeABI();
 
           params.gas = await execute.getGasEstimate.call(
@@ -246,7 +249,8 @@ var execute = {
             contract: constructor
           });
 
-          deferred = web3.eth.sendTransaction(params);
+          //deferred = web3.eth.sendTransaction(params);
+          deferred = web3.cfx.sendTransaction(params);
           handlers.setup(deferred, context);
 
           try {
@@ -264,7 +268,8 @@ var execute = {
               return context.promiEvent.reject(error);
             }
 
-            var web3Instance = new web3.eth.Contract(
+            //var web3Instance = new web3.eth.Contract(
+            var web3Instance = new web3.cfx.Contract(
               constructor.abi,
               receipt.contractAddress
             );
