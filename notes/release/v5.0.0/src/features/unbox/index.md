@@ -16,6 +16,6 @@ If you don't want to deal with the prompts and know what you are doing, you can 
 
 One last thing that has been changed with these commands is the ability to unbox from a branch or subdirectory.  Now you can unbox projects in the following formats:
 ```shell
-truffle unbox https://github.com/truffle-box/bare-box#remote-branch-on-github
-truffle unbox git@github.com:truffle-box/bare-box#web3-one:directory/subDirectory
+truffle unbox https://github.com/truffle-conflux-box/bare-box#remote-branch-on-github
+truffle unbox git@github.com:truffle-conflux-box/bare-box#web3-one:directory/subDirectory
 ```

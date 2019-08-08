@@ -88,7 +88,7 @@ of your contracts:
 `pragma experimental ABIEncoderV2;`
 
 This allows you to use complex function arguments and return values in Solidity
-and interact with the resulting contracts via truffle-contract's JS interface.
+and interact with the resulting contracts via truffle-conflux-contract's JS interface.
 
 <details>
 <summary>See example contract</summary>

@@ -1,8 +1,8 @@
-Besides the usual `truffle-config.js` (the config file formerly known as
+Besides the usual `truffle-conflux-config.js` (the config file formerly known as
 `truffle.js`), Truffle now incorporates a user-level configuration. Expect to
 see more features that take advantage of this!
 
-{"gitdown": "contents", "maxLevel": 5, "rootId": "user-content-what-s-new-in-truffle-v5-new-truffle-config"}
+{"gitdown": "contents", "maxLevel": 5, "rootId": "user-content-what-s-new-in-truffle-v5-new-truffle-conflux-config"}
 
 #### Unique `truffle develop` mnemonics
 When you run `truffle develop`, Truffle no longer uses the classic `candy maple...` mnemonic.  Instead, the first time you run the command it will generate a random mnemonic just for you and persist it!
@@ -24,7 +24,7 @@ If you want to turn the analytics off you can run
 truffle config --disable-analytics
 ```
 
-<small>_P.S. feel free to go take a peek at the two places in the code where metrics are gathered: [when running a command](https://github.com/trufflesuite/truffle/blob/next/packages/truffle-core/lib/command.js#L114-L118) and [to report version and errors](https://github.com/trufflesuite/truffle/blob/next/packages/truffle-core/cli.js). If you go ahead and do a good ol' [GitHub search for the word `analytics`](https://github.com/search?q=analytics+repo%3Atrufflesuite%2Ftruffle&type=Code) you can verify that these are the only places this code gets invoked._ :tada:</small>
+<small>_P.S. feel free to go take a peek at the two places in the code where metrics are gathered: [when running a command](https://github.com/trufflesuite/truffle/blob/next/packages/truffle-conflux-core/lib/command.js#L114-L118) and [to report version and errors](https://github.com/trufflesuite/truffle/blob/next/packages/truffle-conflux-core/cli.js). If you go ahead and do a good ol' [GitHub search for the word `analytics`](https://github.com/search?q=analytics+repo%3Atrufflesuite%2Ftruffle&type=Code) you can verify that these are the only places this code gets invoked._ :tada:</small>
 
 #### More to come!
 In the future we plan on providing more infrastructure to make Truffle even more configurable!  Perhaps you could configure networks that will be used by multiple projects or something similar for plugin installation.  Stay tuned!

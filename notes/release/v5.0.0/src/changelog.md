@@ -8,7 +8,7 @@ The changes listed below only encompass the changes since v5.0.0-beta.2.  See th
 
 #### Bug Fixes / Improvements
 + [#1265](https://github.com/trufflesuite/truffle/pull/1265) Add module for easy decoding of TruffleContract objects. (@seesemichaelj)
-+ [#1424](https://github.com/trufflesuite/truffle/pull/1424) Reorganize the truffle-contract package. (@eggplantzzz)
++ [#1424](https://github.com/trufflesuite/truffle/pull/1424) Reorganize the truffle-conflux-contract package. (@eggplantzzz)
 + [#1453](https://github.com/trufflesuite/truffle/pull/1453) Update README.md. (@jtakalai)
 + [#1460](https://github.com/trufflesuite/truffle/pull/1460) Tweak options for sane library to fix crashes. (@eggplantzzz)
 + [#1462](https://github.com/trufflesuite/truffle/pull/1462) Fix `truffle help <command>` lag. (@CruzMolina)
@@ -33,9 +33,9 @@ The changes listed below only encompass the changes since v5.0.0-beta.2.  See th
 + [#1510](https://github.com/trufflesuite/truffle/pull/1510) Vyper compiler output - handle both Windows and linux line endings. (@sgryphon)
 + [#1519](https://github.com/trufflesuite/truffle/pull/1519) Handle asynchronous 3rd party plugins (2.0). (@daniyarchambylov & @CruzMolina)
 + [#1520](https://github.com/trufflesuite/truffle/pull/1520) Add message to confirm that all breakpoints have been removed. (@haltman-at)
-+ [#1521](https://github.com/trufflesuite/truffle/pull/1521) Fix truffle-hdwallet-provider webpack config. (@CruzMolina)
++ [#1521](https://github.com/trufflesuite/truffle/pull/1521) Fix truffle-conflux-hdwallet-provider webpack config. (@CruzMolina)
 + [#1522](https://github.com/trufflesuite/truffle/pull/1522) Refactor version utility methods and update version logging. (@eggplantzzz)
-+ [#1524](https://github.com/trufflesuite/truffle/pull/1524) Stop saving this.mnemonic in truffle-hdwallet-provider. (@gnidan)
++ [#1524](https://github.com/trufflesuite/truffle/pull/1524) Stop saving this.mnemonic in truffle-conflux-hdwallet-provider. (@gnidan)
 + [#1526](https://github.com/trufflesuite/truffle/pull/1526) Update tests for unboxing. (@eggplantzzz)
 + [#1528](https://github.com/trufflesuite/truffle/pull/1528) Fix bug with the network id check during migrations. (@eggplantzzz)
 + [#1529](https://github.com/trufflesuite/truffle/pull/1529) Fix bug with CompilerSupplier method. (@eggplantzzz)
@@ -45,11 +45,11 @@ The changes listed below only encompass the changes since v5.0.0-beta.2.  See th
 + [#1547](https://github.com/trufflesuite/truffle/pull/1547) Stabilize options.solc. (@CruzMolina)
 
 #### Dependency Updates
-+ [#1464](https://github.com/trufflesuite/truffle/pull/1426) Add configstore dependency to truffle-config package.json. (@seesemichaelj)
++ [#1464](https://github.com/trufflesuite/truffle/pull/1426) Add configstore dependency to truffle-conflux-config package.json. (@seesemichaelj)
 + [#1492](https://github.com/trufflesuite/truffle/pull/1492) Upgrade ganache-core & ganache-cli to latest versions. (@CruzMolina)
 + [#1495](https://github.com/trufflesuite/truffle/pull/1495) Temporarily use Truffle Web3 fork. (@eggplantzzz)
 + [#1513](https://github.com/trufflesuite/truffle/pull/1513) Use beta 37 version of Web3. (@eggplantzzz)
 + [#1515](https://github.com/trufflesuite/truffle/pull/1515) Homogenize package dependencies. (@gnidan)
 + [#1525](https://github.com/trufflesuite/truffle/pull/1525) Add missing app-module-path dependency. (@CruzMolina)
 + [#1530](https://github.com/trufflesuite/truffle/pull/1530) Specify solc v0.5.0 for Truffle. (@CruzMolina)
-+ [#1548](https://github.com/trufflesuite/truffle/pull/1548) Add dev dependencies for truffle-hdwallet-provider. (@CruzMolina)
++ [#1548](https://github.com/trufflesuite/truffle/pull/1548) Add dev dependencies for truffle-conflux-hdwallet-provider. (@CruzMolina)

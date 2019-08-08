@@ -5653,8 +5653,8 @@ ethpm-registry@0.1.0-next.2:
     left-pad "^1.1.3"
     semver "^5.3.0"
     solidity-sha3 "^0.4.1"
-    truffle-artifactor "^2.1.2"
-    truffle-contract "4.0.0-next.0"
+    truffle-conflux-artifactor "^2.1.2"
+    truffle-conflux-contract "4.0.0-next.0"
     web3 "^1.0.0-beta.36"
 
 ethpm-spec@^1.0.1:
@@ -13856,74 +13856,74 @@ trim-right@^1.0.1:
   resolved "https://registry.yarnpkg.com/trim-right/-/trim-right-1.0.1.tgz#cb2e1203067e0c8de1f614094b9fe45704ea6003"
   integrity sha1-yy4SAwZ+DI3h9hQJS5/kVwTqYAM=
 
-truffle-artifactor@^2.1.2:
+truffle-conflux-artifactor@^2.1.2:
   version "2.1.5"
-  resolved "https://registry.yarnpkg.com/truffle-artifactor/-/truffle-artifactor-2.1.5.tgz#939d6cb333984b56529850e03c3ddaca49006870"
+  resolved "https://registry.yarnpkg.com/truffle-conflux-artifactor/-/truffle-conflux-artifactor-2.1.5.tgz#939d6cb333984b56529850e03c3ddaca49006870"
   integrity sha1-k51sszOYS1ZSmFDgPD3aykkAaHA=
   dependencies:
     async "^1.5.2"
     fs-extra "^1.0.0"
     lodash "^4.11.2"
-    truffle-contract "^2.0.3"
-    truffle-contract-schema "^0.0.5"
+    truffle-conflux-contract "^2.0.3"
+    truffle-conflux-contract-schema "^0.0.5"
 
-truffle-blockchain-utils@^0.0.3:
+truffle-conflux-blockchain-utils@^0.0.3:
   version "0.0.3"
-  resolved "https://registry.yarnpkg.com/truffle-blockchain-utils/-/truffle-blockchain-utils-0.0.3.tgz#ae8a111ec124d96504f0e042c6f205c0b3817e29"
+  resolved "https://registry.yarnpkg.com/truffle-conflux-blockchain-utils/-/truffle-conflux-blockchain-utils-0.0.3.tgz#ae8a111ec124d96504f0e042c6f205c0b3817e29"
   integrity sha1-rooRHsEk2WUE8OBCxvIFwLOBfik=
   dependencies:
     web3 "^0.20.1"
 
-truffle-blockchain-utils@^0.0.5:
+truffle-conflux-blockchain-utils@^0.0.5:
   version "0.0.5"
-  resolved "https://registry.yarnpkg.com/truffle-blockchain-utils/-/truffle-blockchain-utils-0.0.5.tgz#a4e5c064dadd69f782a137f3d276d21095da7a47"
+  resolved "https://registry.yarnpkg.com/truffle-conflux-blockchain-utils/-/truffle-conflux-blockchain-utils-0.0.5.tgz#a4e5c064dadd69f782a137f3d276d21095da7a47"
   integrity sha1-pOXAZNrdafeCoTfz0nbSEJXaekc=
 
-truffle-contract-schema@^0.0.5:
+truffle-conflux-contract-schema@^0.0.5:
   version "0.0.5"
-  resolved "https://registry.yarnpkg.com/truffle-contract-schema/-/truffle-contract-schema-0.0.5.tgz#5e9d20bd0bf2a27fe94310748249d484eee49961"
+  resolved "https://registry.yarnpkg.com/truffle-conflux-contract-schema/-/truffle-conflux-contract-schema-0.0.5.tgz#5e9d20bd0bf2a27fe94310748249d484eee49961"
   integrity sha1-Xp0gvQvyon/pQxB0gknUhO7kmWE=
   dependencies:
     crypto-js "^3.1.9-1"
 
-truffle-contract-schema@^2.0.1:
+truffle-conflux-contract-schema@^2.0.1:
   version "2.0.2"
-  resolved "https://registry.yarnpkg.com/truffle-contract-schema/-/truffle-contract-schema-2.0.2.tgz#9db59e3a5ea85b63dca453a2dba9897c2c3523fd"
+  resolved "https://registry.yarnpkg.com/truffle-conflux-contract-schema/-/truffle-conflux-contract-schema-2.0.2.tgz#9db59e3a5ea85b63dca453a2dba9897c2c3523fd"
   integrity sha512-8mYAu0Y7wgMqcIa612dxiN9pzr6rq2YxZCzPizvqyDq+/rGWy8s0irl/T7i92a/4ME1V5ddNFf3+86uIlYbPUg==
   dependencies:
     ajv "^5.1.1"
     crypto-js "^3.1.9-1"
     debug "^3.1.0"
 
-truffle-contract@4.0.0-next.0:
+truffle-conflux-contract@4.0.0-next.0:
   version "4.0.0-next.0"
-  resolved "https://registry.yarnpkg.com/truffle-contract/-/truffle-contract-4.0.0-next.0.tgz#717b5921331ec70ca4f58a3d29ae955db80163fe"
+  resolved "https://registry.yarnpkg.com/truffle-conflux-contract/-/truffle-conflux-contract-4.0.0-next.0.tgz#717b5921331ec70ca4f58a3d29ae955db80163fe"
   integrity sha512-3YmR9isa58DeTGZzZVCIeXqPG5XcO9D5QjLuoVIqxNW6sKPDgSmpsI9rs75im9hOrnP0tbLirQBaibUMIu9Dew==
   dependencies:
     ethereumjs-util "^5.2.0"
     ethjs-abi "0.1.8"
-    truffle-blockchain-utils "^0.0.5"
-    truffle-contract-schema "^2.0.1"
-    truffle-error "^0.0.3"
+    truffle-conflux-blockchain-utils "^0.0.5"
+    truffle-conflux-contract-schema "^2.0.1"
+    truffle-conflux-error "^0.0.3"
     uglify-es "^3.3.9"
     web3 "1.0.0-beta.35"
     web3-core-promievent "1.0.0-beta.35"
     web3-eth-abi "1.0.0-beta.35"
     web3-utils "1.0.0-beta.35"
 
-truffle-contract@^2.0.3:
+truffle-conflux-contract@^2.0.3:
   version "2.0.5"
-  resolved "https://registry.yarnpkg.com/truffle-contract/-/truffle-contract-2.0.5.tgz#3394df90ffa927d106ae3b36b33c6debf9117491"
+  resolved "https://registry.yarnpkg.com/truffle-conflux-contract/-/truffle-conflux-contract-2.0.5.tgz#3394df90ffa927d106ae3b36b33c6debf9117491"
   integrity sha512-ItnN85wh4qVYPg6T4CpubI40c8dWEArtUcWcDoZ7xzj9DL7cwxqstJ0yRxyQIh4u8SRSlrOtm1dh0B7R8jtG+w==
   dependencies:
     ethjs-abi "0.1.8"
-    truffle-blockchain-utils "^0.0.3"
-    truffle-contract-schema "^0.0.5"
+    truffle-conflux-blockchain-utils "^0.0.3"
+    truffle-conflux-contract-schema "^0.0.5"
     web3 "^0.20.1"
 
-truffle-error@^0.0.3:
+truffle-conflux-error@^0.0.3:
   version "0.0.3"
-  resolved "https://registry.yarnpkg.com/truffle-error/-/truffle-error-0.0.3.tgz#4bf55242e14deee1c7194932709182deff2c97ca"
+  resolved "https://registry.yarnpkg.com/truffle-conflux-error/-/truffle-conflux-error-0.0.3.tgz#4bf55242e14deee1c7194932709182deff2c97ca"
   integrity sha1-S/VSQuFN7uHHGUkycJGC3v8sl8o=
 
 truffle-init@^1.0.7:
@@ -13936,7 +13936,7 @@ truffle-init@^1.0.7:
     npm-programmatic "0.0.6"
     rimraf "^2.5.4"
     temp "^0.8.3"
-    truffle-config "^1.0.1"
+    truffle-conflux-config "^1.0.1"
 
 tryer@^1.0.0:
   version "1.0.1"

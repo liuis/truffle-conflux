@@ -65,7 +65,7 @@ Perhaps most notably, Truffle v5 now features:
   which paves the way with its vastly improved interface.
 
   Skip ahead to read about [Interacting with your contracts](#user-content-what-s-new-in-truffle-v5-interacting-with-your-contracts)
-  or about [`async` Migrations](#user-content-what-s-new-in-truffle-v5-truffle-migrate-async-migrations).
+  or about [`async` Migrations](#user-content-what-s-new-in-truffle-v5-truffle-conflux-migrate-async-migrations).
 
 - **"Bring your own compiler"** is an old name for a new feature that's been on
   the roadmap for a long time. Truffle v5 offers unprecedented flexibility in its
@@ -75,7 +75,7 @@ Perhaps most notably, Truffle v5 now features:
   initial implementation of compatibility with the **Vyper programming language**,
   and an integration point for more advanced **arbitrary compilation workflows**.
 
-  See the section on [`truffle compile`](#user-content-what-s-new-in-truffle-v5-truffle-compile)
+  See the section on [`truffle compile`](#user-content-what-s-new-in-truffle-v5-truffle-conflux-compile)
   to learn more.
 
 - A **sweet new migrations system** that gives you **tons of useful information**
@@ -83,7 +83,7 @@ Perhaps most notably, Truffle v5 now features:
   Truffle to **wait for transaction confirmations** or to
   **increase block timeouts**.
 
-  More below about [`truffle migrate`](#user-content-what-s-new-in-truffle-v5-truffle-migrate).
+  More below about [`truffle migrate`](#user-content-what-s-new-in-truffle-v5-truffle-conflux-migrate).
 
 - The **beginnings of a plugins system** with a new Truffle command:
   **`truffle run <external-plugin-command>`**.
@@ -105,7 +105,7 @@ Perhaps most notably, Truffle v5 now features:
 
   To make Truffle the best smart contract development tool it can be, good
   decisions about future updates rely on informed consideration. We promise to
-  [limit the data](#user-content-what-s-new-in-truffle-v5-new-truffle-config-opt-in-analytics)
+  [limit the data](#user-content-what-s-new-in-truffle-v5-new-truffle-conflux-config-opt-in-analytics)
   we collect and thank you in advance for helping us adapt to and inform new best practices.
 
 ---

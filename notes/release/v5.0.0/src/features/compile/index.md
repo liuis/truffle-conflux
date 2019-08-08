@@ -1,6 +1,6 @@
 Lots of great improvements to `truffle compile`! :gear:
 
-{"gitdown": "contents", "maxLevel": 5, "rootId": "user-content-what-s-new-in-truffle-v5-truffle-compile"}
+{"gitdown": "contents", "maxLevel": 5, "rootId": "user-content-what-s-new-in-truffle-v5-truffle-conflux-compile"}
 
 We're really excited by what we've built here, which includes:
 

@@ -30,14 +30,14 @@ please let us know so that we can include it!
 
   </details>
 
-- The `.at(<address>)` method for **truffle-contract** constructors is now
+- The `.at(<address>)` method for **truffle-conflux-contract** constructors is now
   `async`.
 
 ### Web3.js v1.0
 
 - Addresses are now checksummed (mixed-case) instead of all lower-case.
 
-- Numbers returned directly from Web3 (i.e. not from **truffle-contract**) are
+- Numbers returned directly from Web3 (i.e. not from **truffle-conflux-contract**) are
   now `string`s. You can use `web3.utils.toBN()` to convert these.
 
   <details>
@@ -62,7 +62,7 @@ please let us know so that we can include it!
 - Function arguments of type `bytes` must now be converted to hexadecimal
   bytestrings using [`web3.utils.asciiToHex()`](https://web3js.readthedocs.io/en/1.0/web3-utils.html#asciitohex).
 
-- The underlying `.contract` property of **truffle-contract** objects is the
+- The underlying `.contract` property of **truffle-conflux-contract** objects is the
   completely different [`web3.eth.Contract`](https://web3js.readthedocs.io/en/1.0/web3-eth-contract.html).
 
 ### Solidity v0.5
@@ -72,7 +72,7 @@ please let us know so that we can include it!
 
   **Don't want to upgrade your contracts right now?** Scroll down to learn how
   to
-  [specify your compiler version](#user-content-what-s-new-in-truffle-v5-truffle-compile-solidity-specify-your-compiler-version)
+  [specify your compiler version](#user-content-what-s-new-in-truffle-v5-truffle-conflux-compile-solidity-specify-your-compiler-version)
   and continue using v0.4.
 
 ### Note for Quorum users
