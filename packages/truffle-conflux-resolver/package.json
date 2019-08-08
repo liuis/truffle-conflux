@@ -23,15 +23,15 @@
     "async": "2.6.1",
     "detect-installed": "^2.0.4",
     "get-installed-path": "^4.0.8",
-    "truffle-conflux-expect": "^0.0.9",
-    "truffle-conflux-provisioner": "^0.1.5"
+    "truffle-conflux-expect": "../truffle-conflux-expect",
+    "truffle-conflux-provisioner": "../truffle-conflux-provisioner"
   },
   "devDependencies": {
     "mocha": "5.2.0",
     "sinon": "^7.3.1"
   },
   "peerDependencies": {
-    "truffle-conflux-contract": "^4.0.13"
+    "truffle-conflux-contract": "../truffle-conflux-contract"
   },
   "publishConfig": {
     "access": "public"

@@ -5,13 +5,13 @@
   "dependencies": {
     "fs-extra": "^7.0.1",
     "mkdirp": "^0.5.1",
-    "truffle-conflux-artifactor": "^4.0.26",
-    "truffle-conflux-compile": "^4.2.0",
-    "truffle-conflux-compile-vyper": "^1.0.24",
-    "truffle-conflux-config": "^1.1.17",
-    "truffle-conflux-expect": "^0.0.9",
-    "truffle-conflux-external-compile": "^1.0.12",
-    "truffle-conflux-resolver": "^5.0.14"
+    "truffle-conflux-artifactor": "../truffle-conflux-artifactor",
+    "truffle-conflux-compile": "../truffle-conflux-compile",
+    "truffle-conflux-compile-vyper": "../truffle-conflux-compile-vyper",
+    "truffle-conflux-config": "../truffle-conflux-config",
+    "truffle-conflux-expect": "../truffle-conflux-expect",
+    "truffle-conflux-external-compile": "../truffle-conflux-external-compile",
+    "truffle-conflux-resolver": "truffle-conflux-resolver"
   },
   "main": "index.js",
   "scripts": {

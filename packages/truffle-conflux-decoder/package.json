@@ -28,7 +28,7 @@
     "lodash.clonedeep": "^4.5.0",
     "lodash.isequal": "^4.5.0",
     "lodash.merge": "^4.6.1",
-    "truffle-conflux-decode-utils": "^1.0.15",
+    "truffle-conflux-decode-utils": "../truffle-conflux-debug-utils",
     "utf8": "^3.0.0",
     "web3": "^1.2.0"
   },
@@ -45,7 +45,7 @@
     "@types/utf8": "^2.1.6",
     "@types/web3": "^1.0.5",
     "json-schema-to-typescript": "^5.5.0",
-    "truffle-conflux-contract-schema": "^3.0.11",
+    "truffle-conflux-contract-schema": "../truffle-conflux-contract-schema",
     "typescript": "^3.1.3"
   },
   "keywords": [

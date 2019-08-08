@@ -14,8 +14,8 @@
     "test": "mocha"
   },
   "dependencies": {
-    "truffle-conflux-error": "^0.0.5",
-    "truffle-conflux-interface-adapter": "^0.2.2",
+    "truffle-conflux-error": "../truffle-conflux-error",
+    "truffle-conflux-interface-adapter": "../truffle-conflux-interface-adapter",
     "web3": "^1.2.0",
     "conflux-web":"0.1.19-alpha.0"
   },

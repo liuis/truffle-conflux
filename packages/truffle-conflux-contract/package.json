@@ -21,17 +21,17 @@
   "dependencies": {
     "bignumber.js": "^7.2.1",
     "ethers": "^4.0.0-beta.1",
-    "truffle-conflux-blockchain-utils": "^0.0.10",
-    "truffle-conflux-contract-schema": "^3.0.11",
-    "truffle-conflux-error": "^0.0.5",
-    "truffle-conflux-interface-adapter": "^0.2.2",
+    "truffle-conflux-blockchain-utils": "../truffle-conflux-blockchain-utils",
+    "truffle-conflux-contract-schema": "../truffle-conflux-contract-schema",
+    "truffle-conflux-error": "../truffle-conflux-error",
+    "truffle-conflux-interface-adapter": "../truffle-conflux-interface-adapter",
     "web3": "^1.2.0",
     "conflux-web": "0.1.19-alpha.0",
     "web3-core-promievent": "^1.2.0",
     "web3-eth-abi": "^1.2.0",
-    "conflux-web-cfx-abi": "*",
+    "conflux-web-cfx-abi": "0.1.15-alpha.0",
     "web3-utils": "^1.2.0",
-    "conflux-web-utils": "*"
+    "conflux-web-utils": "0.1.15-alpha.0"
   },
   "devDependencies": {
     "async": "2.6.1",
@@ -41,7 +41,7 @@
     "ganache-core": "2.5.7",
     "mocha": "5.2.0",
     "temp": "^0.8.3",
-    "truffle-conflux-compile": "^4.2.0",
+    "truffle-conflux-compile": "../truffle-conflux-compile",
     "uglify-es": "^3.3.9"
   },
   "keywords": [

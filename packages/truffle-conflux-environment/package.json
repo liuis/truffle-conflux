@@ -14,12 +14,13 @@
   "dependencies": {
     "ganache-core": "2.5.7",
     "node-ipc": "^9.1.1",
-    "truffle-conflux-artifactor": "^4.0.26",
-    "truffle-conflux-error": "^0.0.5",
-    "truffle-conflux-expect": "^0.0.9",
-    "truffle-conflux-interface-adapter": "^0.2.2",
-    "truffle-conflux-resolver": "^5.0.14",
-    "web3": "^1.2.0"
+    "truffle-conflux-artifactor": "../truffle-conflux-artifactor",
+    "truffle-conflux-error": "../truffle-conflux-error",
+    "truffle-conflux-expect": "../truffle-conflux-expect",
+    "truffle-conflux-interface-adapter": "../truffle-conflux-interface-adapter",
+    "truffle-conflux-resolver": "../truffle-conflux-resolver",
+    "web3": "^1.2.0",
+    "conflux-web": "0.1.19-alpha.0"
   },
   "devDependencies": {
     "debug": "^4.1.0"

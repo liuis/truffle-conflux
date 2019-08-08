@@ -14,10 +14,10 @@
     "require-from-string": "^2.0.2",
     "semver": "^5.6.0",
     "solc": "^0.5.0",
-    "truffle-conflux-config": "^1.1.17",
-    "truffle-conflux-contract-sources": "^0.1.5",
-    "truffle-conflux-error": "^0.0.5",
-    "truffle-conflux-expect": "^0.0.9"
+    "truffle-conflux-config": "../truffle-conflux-config",
+    "truffle-conflux-contract-sources": "../truffle-conflux-contract-sources",
+    "truffle-conflux-error": "../truffle-conflux-error",
+    "truffle-conflux-expect": "../truffle-conflux-expect"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -26,7 +26,7 @@
     "mocha": "5.2.0",
     "sinon": "^7.2.2",
     "tmp": "0.0.33",
-    "truffle-conflux-resolver": "^5.0.14"
+    "truffle-conflux-resolver": "../truffle-conflux-resolver"
   },
   "babel": {
     "presets": [
