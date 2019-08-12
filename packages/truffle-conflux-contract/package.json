@@ -26,7 +26,7 @@
     "truffle-conflux-error": "../truffle-conflux-error",
     "truffle-conflux-interface-adapter": "../truffle-conflux-interface-adapter",
     "web3": "^1.2.0",
-    "conflux-web": "0.1.19-alpha.0",
+    "conflux-web": "0.1.20-alpha.0",
     "web3-core-promievent": "^1.2.0",
     "web3-eth-abi": "^1.2.0",
     "conflux-web-cfx-abi": "0.1.15-alpha.0",

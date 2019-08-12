@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "emittery": "^0.4.0",
-    "truffle-conflux-contract": "../truffle-conflux-conflux",
+    "truffle-conflux-contract": "../truffle-conflux-contract",
     "truffle-conflux-expect": "../truffle-conflux-expect"
   },
   "devDependencies": {
@@ -24,7 +24,7 @@
     "truffle-conflux-reporters": "../truffle-conflux-reporters",
     "truffle-conflux-workflow-compile": "../truffle-conflux-workflow-compile",
     "web3": "^1.2.0",
-    "conflux-web": "0.1.19-alpha.0"
+    "conflux-web": "0.1.20-alpha.0"
   },
   "keywords": [
     "contracts",

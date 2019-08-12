@@ -11,7 +11,7 @@
     "truffle-conflux-config": "../truffle-conflux-config",
     "truffle-conflux-expect": "../truffle-conflux-expect",
     "truffle-conflux-external-compile": "../truffle-conflux-external-compile",
-    "truffle-conflux-resolver": "truffle-conflux-resolver"
+    "truffle-conflux-resolver": "../truffle-conflux-resolver"
   },
   "main": "index.js",
   "scripts": {

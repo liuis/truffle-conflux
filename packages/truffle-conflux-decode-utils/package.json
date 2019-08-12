@@ -22,7 +22,7 @@
     "lodash.clonedeep": "^4.5.0",
     "lodash.escaperegexp": "^4.1.2",
     "web3": "^1.2.0",
-    "conflux-web": "0.1.19-alpha.0",
+    "conflux-web": "0.1.20-alpha.0",
     "web3-eth-abi": "1.0.0-beta.52",
     "conflux-web-cfx-abi": "0.1.15-alpha.0"
   },

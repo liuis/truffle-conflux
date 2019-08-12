@@ -24,7 +24,7 @@
     "temp": "^0.8.3",
     "truffle-conflux-contract": "truffle-conflux-contract",
     "web3": "^1.2.0",
-    "conflux-web": "0.1.19-alpha.0"
+    "conflux-web": "0.1.20-alpha.0"
   },
   "publishConfig": {
     "access": "public"
