@@ -15,13 +15,13 @@ export const QuorumDefinition = {
 
 const overrides = {
 // The ts-ignores are ignoring the checks that are
-// saying that web3.eth.getBlock is a function and doesn't
+// saying that web3.cfx.getBlock is a function and doesn't
 // have a `method` property, which it does
   "getBlock": (web3: Web3Shim) => {
   // @ts-ignore
-  const _oldBlockFormatter = web3.eth.getBlock.method.outputFormatter;
+  const _oldBlockFormatter = web3.cfx.getBlock.method.outputFormatter;
   // @ts-ignore
-  web3.eth.getBlock.method.outputFormatter = (block: any) => {
+  web3.cfx.getBlock.method.outputFormatter = (block: any) => {
     const _oldTimestamp = block.timestamp;
     const _oldGasLimit = block.gasLimit;
     const _oldGasUsed = block.gasUsed;
@@ -42,7 +42,7 @@ const overrides = {
     block.gasUsed = "0x0";
 
     // @ts-ignore
-    let result = _oldBlockFormatter.call(web3.eth.getBlock.method, block);
+    let result = _oldBlockFormatter.call(web3.cfx.getBlock.method, block);
 
     // Perhaps there is a better method of doing this,
     // but the raw hexstrings work for the time being
@@ -57,17 +57,17 @@ const overrides = {
   "getTransaction": (web3: Web3Shim) => {
   const _oldTransactionFormatter =
     // @ts-ignore
-    web3.eth.getTransaction.method.outputFormatter;
+    web3.cfx.getTransaction.method.outputFormatter;
 
   // @ts-ignore
-  web3.eth.getTransaction.method.outputFormatter = (tx: any) => {
+  web3.cfx.getTransaction.method.outputFormatter = (tx: any) => {
     const _oldGas = tx.gas;
 
     tx.gas = "0x0";
 
     let result = _oldTransactionFormatter.call(
       // @ts-ignore
-      web3.eth.getTransaction.method,
+      web3.cfx.getTransaction.method,
       tx
     );
 
@@ -82,17 +82,17 @@ const overrides = {
   "getTransactionReceipt": (web3: Web3Shim) => {
   const _oldTransactionReceiptFormatter =
     // @ts-ignore
-    web3.eth.getTransactionReceipt.method.outputFormatter;
+    web3.cfx.getTransactionReceipt.method.outputFormatter;
 
   // @ts-ignore
-  web3.eth.getTransactionReceipt.method.outputFormatter = (receipt: any) => {
+  web3.cfx.getTransactionReceipt.method.outputFormatter = (receipt: any) => {
     const _oldGasUsed = receipt.gasUsed;
 
     receipt.gasUsed = "0x0";
 
     let result = _oldTransactionReceiptFormatter.call(
       // @ts-ignore
-      web3.eth.getTransactionReceipt.method,
+      web3.cfx.getTransactionReceipt.method,
       receipt
     );
 
@@ -108,7 +108,7 @@ const overrides = {
 // is that the 'Out of Gas?' zero/null bytes guard has been removed and any
 // falsy bytes are interpreted as a zero value.
   "decodeParameters": (web3: Web3Shim) => {
-  const _oldDecodeParameters = web3.eth.abi.decodeParameters;
+  const _oldDecodeParameters = web3.cfx.abi.decodeParameters;
 
   const ethersAbiCoder = new EthersAbi((type, value) => {
     if (
@@ -124,13 +124,13 @@ const overrides = {
   // result method
   function Result() {}
 
-  web3.eth.abi.decodeParameters = (outputs: Array<any>, bytes: String) => {
+  web3.cfx.abi.decodeParameters = (outputs: Array<any>, bytes: String) => {
     // if bytes is falsy, we'll pass 64 '0' bits to the ethers.js decoder.
     // the decoder will decode the 64 '0' bits as a 0 value.
     if (!bytes) bytes = "0".repeat(64);
     const res = ethersAbiCoder.decode(
     //@ts-ignore 'mapTypes' not existing on type 'ABI'
-      web3.eth.abi.mapTypes(outputs),
+      web3.cfx.abi.mapTypes(outputs),
       `0x${bytes.replace(/0x/i, "")}`
     );
     //@ts-ignore complaint regarding Result method

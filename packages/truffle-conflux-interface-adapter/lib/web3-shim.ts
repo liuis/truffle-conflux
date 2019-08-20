@@ -1,18 +1,18 @@
-import ConfluxWeb from "conflux-web";
+import ConWeb from "conflux-web";
 import { Provider } from "conflux-web/providers";
 
 //import { EthereumDefinition } from "./ethereum-overloads";
 import { ConfluxDefinition } from "./conflux-overloads";
-//import { QuorumDefinition } from "./quorum-overloads";
-//import { FabricEvmDefinition } from "./fabric-evm-overloads";
+import { QuorumDefinition } from "./quorum-overloads";
+import { FabricEvmDefinition } from "./fabric-evm-overloads";
 
 const initInterface = async(web3Shim: Web3Shim) => {
 
     const networkTypes: NetworkTypesConfig = new Map(Object.entries({
  //     "ethereum": EthereumDefinition,
       "conflux": ConfluxDefinition,
-  //    "quorum": QuorumDefinition,
-   //   "fabric-evm": FabricEvmDefinition
+      "quorum": QuorumDefinition,
+      "fabric-evm": FabricEvmDefinition
     }));
 
     networkTypes.get(web3Shim.networkType).initNetworkType(web3Shim);
@@ -54,7 +54,7 @@ export type NetworkTypesConfig = Map<NetworkType, NetworkTypeDefinition>;
 // should drive the development of the correct architecture of
 // `truffle-conflux-interface-adapter`that should use this work in a more
 // sane and organized manner.
-export class Web3Shim extends ConfluxWeb {
+export class Web3Shim extends ConWeb {
   public networkType: NetworkType;
 
   constructor(options?: Web3ShimOptions) {
