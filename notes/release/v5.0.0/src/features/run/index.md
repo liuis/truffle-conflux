@@ -23,7 +23,7 @@ npm install --save-dev truffle-plugin-hello
 
 ```javascript
 module.exports = {
-  /* ... rest of truffle-config */
+  /* ... rest of truffle-conflux-config */
 
   plugins: [
     "truffle-plugin-hello"
@@ -58,7 +58,7 @@ Hello, World!
 /**
  * Outputs `Hello, World!` when running `truffle run hello`,
  * or `Hello, ${name}` when running `truffle run hello [name]`
- * @param {Config} config - A truffle-config object.
+ * @param {Config} config - A truffle-conflux-config object.
  * Has attributes like `truffle_directory`, `working_directory`, etc.
  * @param {(done|callback)} [done=done] - A done callback, or a normal callback.
  */

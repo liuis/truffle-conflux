@@ -1,0 +1,33 @@
+{
+  "private": false,
+  "name": "truffle-conflux-artifactor",
+  "description": "A contract packager for Ethereum and Javascript",
+  "license": "MIT",
+  "author": "Tim Coulter",
+  "repository": "https://github.com/trufflesuite/truffle/tree/master/packages/truffle-conflux-artifactor",
+  "version": "4.0.26",
+  "main": "./index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "fs-extra": "6.0.1",
+    "lodash": "^4.17.13",
+    "truffle-conflux-contract-schema": "../truffle-conflux-contract-schema"
+  },
+  "devDependencies": {
+    "chai": "4.2.0",
+    "debug": "^4.1.1",
+    "ganache-core": "2.5.7",
+    "mocha": "5.2.0",
+    "require-nocache": "^1.0.0",
+    "temp": "^0.8.3",
+    "truffle-conflux-contract": "truffle-conflux-contract",
+    "web3": "^1.2.0",
+    "conflux-web": "0.1.20-alpha.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "b207efb3c1409746537293b3e0fc27350029188e"
+}

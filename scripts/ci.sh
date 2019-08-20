@@ -38,7 +38,7 @@ elif [ "$GETH" = true ]; then
   docker pull ethereum/client-go:latest
   run_geth
   lerna run --scope truffle test --stream -- --exit
-  lerna run --scope truffle-contract test --stream -- --exit
+  lerna run --scope truffle-conflux-contract test --stream -- --exit
 
 elif [ "$PACKAGES" = true ]; then
 
@@ -60,9 +60,9 @@ elif [ "$COVERAGE" = true ]; then
   wget https://bootstrap.pypa.io/get-pip.py
   sudo python3.6 get-pip.py
   sudo pip3 install vyper
-  cd packages/truffle-debugger && yarn test:coverage && \
-  cd ../../ && nyc lerna run --ignore truffle-debugger test && \
-  cat ./packages/truffle-debugger/coverage/lcov.info >> ./coverage/lcov.info && \
+  cd packages/truffle-conflux-debugger && yarn test:coverage && \
+  cd ../../ && nyc lerna run --ignore truffle-conflux-debugger test && \
+  cat ./packages/truffle-conflux-debugger/coverage/lcov.info >> ./coverage/lcov.info && \
   cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
 
 fi

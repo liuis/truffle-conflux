@@ -1,0 +1,37 @@
+{
+  "name": "truffle-conflux-require",
+  "description": "Require and execute a Javascript module within a Truffle context",
+  "license": "MIT",
+  "author": "Tim Coulter <tim.coulter@consensys.net>",
+  "homepage": "https://github.com/liuis/truffle-exec#readme",
+  "repository": "https://github.com/liuis/truffle/tree/master/packages/truffle-conflux-require",
+  "bugs": {
+    "url": "https://github.com/liuis/truffle-exec/issues"
+  },
+  "version": "2.0.17",
+  "main": "require.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "original-require": "1.0.1",
+    "truffle-conflux-config": "../truffle-conflux-config",
+    "truffle-conflux-expect": "../truffle-conflux-expect",
+    "truffle-conflux-interface-adapter": "../truffle-conflux-interface-adapter",
+    "web3": "^1.2.0",
+    "conflux-web": "0.1.20-alpha.0"
+  },
+  "devDependencies": {
+    "mocha": "5.2.0"
+  },
+  "keywords": [
+    "ethereum",
+    "exec",
+    "require",
+    "truffle"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "b207efb3c1409746537293b3e0fc27350029188e"
+}

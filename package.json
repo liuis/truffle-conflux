@@ -37,5 +37,23 @@
       "eslint --fix",
       "git add"
     ]
-  }
+  },
+  "name": "truffle-conflux",
+  "description": "<img src=\"https://truffleframework.com/img/truffle-logo-dark.svg\" width=\"200\">",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liuis/truffle-conflux.git"
+  },
+  "keywords": [
+    "truffle",
+    "conflux"
+  ],
+  "author": "ping.li@conflux-chain.org",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liuis/truffle-conflux/issues"
+  },
+  "homepage": "https://github.com/liuis/truffle-conflux#readme"
 }

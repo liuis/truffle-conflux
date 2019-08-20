@@ -1,0 +1,89 @@
+{
+  "name": "truffle-conflux-core",
+  "description": "Core code for Truffle command line tool",
+  "author": "consensys.net",
+  "homepage": "https://github.com/ConsenSys/truffle",
+  "repository": "https://github.com/liuis/truffle/tree/master/packages/truffle-conflux-core",
+  "bugs": {
+    "url": "https://github.com/ConsenSys/truffle/issues"
+  },
+  "version": "5.0.30",
+  "bin": {
+    "truffle": "./cli.js",
+    "truffle-exec": "./exec.js"
+  },
+  "scripts": {
+    "test": "mocha ./test/** ./test/**/*"
+  },
+  "dependencies": {
+    "app-module-path": "^2.2.0",
+    "async": "2.6.1",
+    "bip39": "^2.2.0",
+    "chai": "4.2.0",
+    "colors": "^1.1.2",
+    "command-exists": "^1.2.8",
+    "configstore": "^4.0.0",
+    "cpr": "^3.0.1",
+    "debug": "^4.1.0",
+    "del": "^2.2.0",
+    "ethereumjs-wallet": "^0.6.2",
+    "ethpm": "0.0.16",
+    "ethpm-registry": "0.1.0-next.2",
+    "fs-extra": "6.0.1",
+    "ganache-core": "2.5.7",
+    "hdkey": "^1.1.0",
+    "mkdirp": "^0.5.1",
+    "mocha": "5.2.0",
+    "node-dir": "0.1.17",
+    "node-emoji": "^1.8.1",
+    "node-ipc": "^9.1.1",
+    "original-require": "1.0.1",
+    "safe-eval": "^0.4.1",
+    "sane": "^4.0.2",
+    "source-map-support": "^0.5.3",
+    "spawn-args": "^0.1.0",
+    "temp": "^0.8.3",
+    "truffle-conflux-artifactor": "../truffle-conflux-artifactor",
+    "truffle-conflux-box": "../truffle-conflux-box",
+    "truffle-conflux-compile": "../truffle-conflux-compile",
+    "truffle-conflux-config": "../truffle-conflux-config",
+    "truffle-conflux-contract": "../truffle-conflux-contract",
+    "truffle-conflux-contract-sources": "../truffle-conflux-contract-sources",
+    "truffle-conflux-debug-utils": "../truffle-conflux-debug-utils",
+    "truffle-conflux-debugger": "../truffle-conflux-debugger",
+    "truffle-conflux-deployer": "../truffle-conflux-deployer",
+    "truffle-conflux-error": "../truffle-conflux-error",
+    "truffle-conflux-expect": "../truffle-conflux-expect",
+    "truffle-init": "^1.0.7",
+    "truffle-conflux-interface-adapter": "../truffle-conflux-interface-adapter",
+    "truffle-conflux-migrate": "../truffle-conflux-migrate",
+    "truffle-conflux-provider": "../truffle-conflux-provider",
+    "truffle-conflux-provisioner": "../truffle-conflux-provisioner",
+    "truffle-conflux-require": "../truffle-conflux-require",
+    "truffle-conflux-resolver": "../truffle-conflux-resolver",
+    "truffle-conflux-solidity-utils": "../truffle-conflux-solidity-utils",
+    "truffle-conflux-workflow-compile": "../truffle-conflux-workflow-compile",
+    "universal-analytics": "^0.4.17",
+    "web3": "^1.2.0",
+    "conflux-web": "0.1.20-alpha.0",
+    "xregexp": "^4.2.4",
+    "yargs": "^8.0.2"
+  },
+  "devDependencies": {
+    "glob": "^7.1.2",
+    "memorystream": "^0.3.1",
+    "truffle-conflux-blockchain-utils": "../truffle-conflux-blockchain-utils"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "authors": [
+    {
+      "name": "Tim Coulter",
+      "email": "tim@timothyjcoulter.com",
+      "url": "https://github.com/tcoulter"
+    }
+  ],
+  "gitHead": "b207efb3c1409746537293b3e0fc27350029188e",
+  "namespace": "consensys"
+}

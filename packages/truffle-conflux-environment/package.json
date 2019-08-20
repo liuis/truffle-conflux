@@ -1,0 +1,28 @@
+{
+  "private": false,
+  "name": "truffle-conflux-environment",
+  "description": "This package contains the code needed to determine environment-specific data",
+  "license": "MIT",
+  "author": "Faina Shalts",
+  "homepage": "https://github.com/trufflesuite/truffle/tree/master/packages/truffle-conflux-environment#readme",
+  "repository": "https://github.com/trufflesuite/truffle/tree/master/packages/truffle-conflux-environment",
+  "bugs": {
+    "url": "https://github.com/trufflesuite/truffle/issues"
+  },
+  "version": "0.1.6",
+  "main": "index.js",
+  "dependencies": {
+    "ganache-core": "2.5.7",
+    "node-ipc": "^9.1.1",
+    "truffle-conflux-artifactor": "../truffle-conflux-artifactor",
+    "truffle-conflux-error": "../truffle-conflux-error",
+    "truffle-conflux-expect": "../truffle-conflux-expect",
+    "truffle-conflux-interface-adapter": "../truffle-conflux-interface-adapter",
+    "truffle-conflux-resolver": "../truffle-conflux-resolver",
+    "web3": "^1.2.0",
+    "conflux-web": "0.1.20-alpha.0"
+  },
+  "devDependencies": {
+    "debug": "^4.1.0"
+  }
+}
