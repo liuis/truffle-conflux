@@ -1,6 +1,7 @@
-import ConWeb from "conflux-web";
+import {catService,catProd} from "./Config"
+import ConfluxWeb from "conflux-web";
 import { Provider } from "conflux-web/providers";
-
+catProd.info("Provider:" + Provider)
 //import { EthereumDefinition } from "./ethereum-overloads";
 import { ConfluxDefinition } from "./conflux-overloads";
 import { QuorumDefinition } from "./quorum-overloads";
@@ -54,7 +55,7 @@ export type NetworkTypesConfig = Map<NetworkType, NetworkTypeDefinition>;
 // should drive the development of the correct architecture of
 // `truffle-conflux-interface-adapter`that should use this work in a more
 // sane and organized manner.
-export class Web3Shim extends ConWeb {
+export class Web3Shim extends ConfluxWeb {
   public networkType: NetworkType;
 
   constructor(options?: Web3ShimOptions) {

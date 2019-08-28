@@ -3,7 +3,7 @@ import assert from "assert";
 
 import { Server } from "http";
 
-import Web3 from "web3";
+import ConfluxWeb from "conflux-web";
 import Ganache from "ganache-core";
 
 import { Web3Shim } from "../lib";
@@ -17,7 +17,7 @@ async function prepareGanache(fabricEvmEnabled: boolean): Promise<{ server: Serv
       if (err) reject(err);
 
       const web3Shim = new Web3Shim({
-        provider: new Web3.providers.HttpProvider(`http://127.0.0.1:${port}`),
+        provider: new ConfluxWeb.providers.HttpProvider(`http://127.0.0.1:${port}`),
         networkType: fabricEvmEnabled ? "fabric-evm" : "ethereum"
       });
       resolve({
