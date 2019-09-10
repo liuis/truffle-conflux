@@ -37,7 +37,7 @@ describe("Quorum decodeParameters Overload", function() {
       let preparedGanache;
       try {
         preparedGanache = await prepareGanache(true);
-        const result = await preparedGanache.web3Shim.eth.abi.decodeParameters(expectedOutput, emptyByte);
+        const result = await preparedGanache.web3Shim.cfx.abi.decodeParameters(expectedOutput, emptyByte);
         assert(result);
         assert(result.retVal === "0");
         preparedGanache.server.close(resolve);

@@ -1,7 +1,5 @@
-import {catService,catProd} from "./Config"
 import ConfluxWeb from "conflux-web";
 import { Provider } from "conflux-web/providers";
-catProd.info("Provider:" + Provider)
 //import { EthereumDefinition } from "./ethereum-overloads";
 import { ConfluxDefinition } from "./conflux-overloads";
 import { QuorumDefinition } from "./quorum-overloads";
