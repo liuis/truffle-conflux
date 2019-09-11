@@ -30,7 +30,8 @@
     "lodash.merge": "^4.6.1",
     "truffle-conflux-decode-utils": "../truffle-conflux-debug-utils",
     "utf8": "^3.0.0",
-    "web3": "^1.2.0"
+    "web3": "^1.2.0",
+    "conflux-web": "1.2.2-alpha.0"
   },
   "peerDependencies": {
     "truffle": "^5.0.14"

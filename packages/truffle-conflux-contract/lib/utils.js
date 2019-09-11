@@ -3,7 +3,7 @@ const debug = require("debug")("contract:utils"); // eslint-disable-line no-unus
 const web3Utils = require("conflux-web-utils");
 const bigNumberify = require("ethers/utils/bignumber").bigNumberify;
 //const abi = require("web3-eth-abi");
-const abi = require("conflux-web-abi");
+const abi = require("conflux-web-cfx-abi");
 const BlockchainUtils = require("truffle-conflux-blockchain-utils");
 const reformat = require("./reformat");
 

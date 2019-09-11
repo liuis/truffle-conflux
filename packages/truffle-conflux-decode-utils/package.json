@@ -18,13 +18,14 @@
   },
   "types": "src/index.ts",
   "dependencies": {
+    "@types/debug": "^4.1.5",
     "bn.js": "^4.11.8",
+    "conflux-web": "1.2.2-alpha.0",
+    "conflux-web-cfx-abi": "1.2.2-alpha.0",
     "lodash.clonedeep": "^4.5.0",
     "lodash.escaperegexp": "^4.1.2",
     "web3": "^1.2.0",
-    "conflux-web": "0.1.20-alpha.0",
-    "web3-eth-abi": "1.0.0-beta.52",
-    "conflux-web-cfx-abi": "0.1.15-alpha.0"
+    "web3-eth-abi": "1.0.0-beta.52"
   },
   "devDependencies": {
     "@types/bn.js": "^4.11.2",

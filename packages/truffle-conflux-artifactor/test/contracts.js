@@ -1,12 +1,12 @@
 const assert = require("chai").assert;
 const Artifactor = require("../");
-const contract = require("truffle-conflux-contract");
-const Schema = require("truffle-conflux-contract-schema");
+const contract = require("../truffle-conflux-contract");
+const Schema = require("../truffle-conflux-contract-schema");
 const temp = require("temp").track();
 const path = require("path");
 const fs = require("fs");
 const requireNoCache = require("require-nocache")(module);
-const Compile = require("truffle-conflux-compile/legacy");
+const Compile = require("../truffle-conflux-compile/legacy");
 const Ganache = require("ganache-core");
 const Web3 = require("web3");
 const { promisify } = require("util");
@@ -22,7 +22,7 @@ describe("artifactor + require", () => {
   const web3 = new Web3();
   web3.setProvider(provider);
 
-  before(() => web3.eth.net.getId().then(id => (networkID = id)));
+  before(() => web3.cfx.net.getId().then(id => (networkID = id)));
 
   before(async function() {
     this.timeout(20000);
@@ -96,7 +96,7 @@ describe("artifactor + require", () => {
   });
 
   before(() =>
-    web3.eth.getAccounts().then(_accounts => {
+    web3.cfx.getAccounts().then(_accounts => {
       accounts = _accounts;
 
       Example.defaults({
@@ -236,7 +236,7 @@ describe("artifactor + require", () => {
       .then(
         () =>
           new Promise((accept, reject) =>
-            web3.eth.getBalance(example.address, (err, balance) => {
+            web3.cfx.getBalance(example.address, (err, balance) => {
               if (err) return reject(err);
               accept(balance);
             })
@@ -264,7 +264,7 @@ describe("artifactor + require", () => {
       .then(
         () =>
           new Promise((accept, reject) =>
-            web3.eth.getBalance(example.address, (err, balance) => {
+            web3.cfx.getBalance(example.address, (err, balance) => {
               if (err) return reject(err);
               accept(balance);
             })

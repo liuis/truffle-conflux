@@ -1,9 +1,10 @@
 import debugModule from "debug";
 const debug = debugModule("decode-utils:contexts");
 
-import { Abi } from "truffle-conflux-contract-schema/spec";
-import { AbiCoder } from "web3-eth-abi";
-import { AbiItem } from "web3-utils";
+import { Abi } from "../../truffle-conflux-contract-schema/spec";
+//import { AbiCoder } from "web3-eth-abi";
+import { AbiCoder } from "conflux-web-cfx-abi";
+import { AbiItem } from "conflux-web-utils";
 const abiCoder = new AbiCoder();
 import escapeRegExp from "lodash.escaperegexp";
 

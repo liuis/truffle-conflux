@@ -19,7 +19,7 @@
     "truffle-conflux-expect": "../truffle-conflux-expect",
     "truffle-conflux-interface-adapter": "../truffle-conflux-interface-adapter",
     "web3": "^1.2.0",
-    "conflux-web": "0.1.20-alpha.0"
+    "conflux-web": "1.2.2-alpha.0"
   },
   "devDependencies": {
     "mocha": "5.2.0"

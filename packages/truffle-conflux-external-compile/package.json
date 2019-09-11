@@ -24,7 +24,7 @@
     "truffle-conflux-contract-schema": "../truffle-conflux-contract-schema",
     "truffle-conflux-expect": "../truffle-conflux-expect",
     "web3-utils": "^1.2.0",
-    "conflux-web-utils": "0.1.15-alpha.0"
+    "conflux-web-utils": "1.2.2-alpha.0"
   },
   "devDependencies": {
     "chai": "4.2.0",
