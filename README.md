@@ -1,9 +1,8 @@
-##已经Truffle-Conflux Test case Pass的subpackages
+## 一。 已经Truffle-Conflux Test case Pass的subpackages
 
 - [ ]  truffle-conflux            
 
-
-- [ ] truffle-conflux-contract-schema        
+- [x] truffle-conflux-contract-schema        
 
 - [ ] truffle-conflux-error                  
 
@@ -37,7 +36,7 @@
 
 - [ ] truffle-conflux-debugger               
 
-- [ ] truffle-conflux-interface-adapter      
+- [x] truffle-conflux-interface-adapter      
 
 - [ ] truffle-conflux-solidity-loader
 
@@ -68,3 +67,5 @@
 - [ ] truffle-conflux-environment           
 
 - [ ] truffle-conflux-provisioner
+
+## 二。truffle-conflux-init repo build pass
