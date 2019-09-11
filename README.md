@@ -4,7 +4,7 @@
 
 - [x] truffle-conflux-contract-schema        
 
-- [ ] truffle-conflux-error                  
+- [x] truffle-conflux-error                  
 
 - [ ] truffle-conflux-reporters
 
@@ -56,11 +56,11 @@
 
 - [ ] truffle-conflux-workflow-compile
 
-- [ ] truffle-conflux-config                 
+- [x] truffle-conflux-config                 
 
 - [ ] truffle-conflux-deployer               
 
-- [ ] truffle-conflux-provider
+- [x] truffle-conflux-provider
 
 - [ ] truffle-conflux-contract               
 
