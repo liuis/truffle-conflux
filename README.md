@@ -14,25 +14,25 @@
 
 - [x] truffle-conflux-expect                
 
-- [ ] truffle-conflux-require
+- [x] truffle-conflux-require
 
 - [x] truffle-conflux-blockchain-utils       
 
 - [ ] truffle-conflux-core
 
-- [ ] truffle-conflux-external-compile       
+- [x] truffle-conflux-external-compile       
 
 - [x] truffle-conflux-resolver
 
-- [ ] truffle-conflux-box                    
+- [x] truffle-conflux-box                    
 
-- [ ] truffle-conflux-debug-utils            
+- [x] truffle-conflux-debug-utils            
 
 - [ ] truffle-conflux-hdwallet-provider      
 
 - [ ] truffle-conflux-sawtooth-seth-provider
 
-- [ ] truffle-conflux-code-utils             
+- [x] truffle-conflux-code-utils             
 
 - [ ] truffle-conflux-debugger               
 
@@ -40,17 +40,17 @@
 
 - [ ] truffle-conflux-solidity-loader
 
-- [ ] truffle-conflux-compile                
+- [x] truffle-conflux-compile    ----部分Test Case 需要ganache-core， ganache-cli 支持               
 
-- [ ] truffle-conflux-decode-utils           
+- [x] truffle-conflux-decode-utils  ----部分Test Case 需要DS的 @type/conflux-web          
 
-- [ ] truffle-conflux-legacy-system          
+- [x] truffle-conflux-legacy-system          
 
-- [ ] truffle-conflux-solidity-utils
+- [x] truffle-conflux-solidity-utils
 
-- [ ] truffle-conflux-compile-vyper          
+- [x] truffle-conflux-compile-vyper ----部分Test Case 需要ganache-core， ganache-cli 支持            
 
-- [ ] truffle-conflux-decoder                
+- [ ] truffle-conflux-decoder    ----部分Test Case 需要DS的 @type/conflux-web             
 
 - [ ] truffle-conflux-migrate                
 
@@ -60,9 +60,9 @@
 
 - [ ] truffle-conflux-deployer               
 
-- [x] truffle-conflux-provider
+- [x] truffle-conflux-provider  ----部分Test Case 需要ganache-core， ganache-cli 支持
 
-- [ ] truffle-conflux-contract               
+- [x] truffle-conflux-contract  ----部分Test Case 需要ganache-core， ganache-cli 支持             
 
 - [ ] truffle-conflux-environment           
 
