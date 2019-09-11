@@ -2,27 +2,27 @@
 
 - [ ]  truffle-conflux            
 
-- [x] truffle-conflux-contract-schema        
+- [x] truffle-conflux-contract-schema      
 
 - [x] truffle-conflux-error                  
 
-- [ ] truffle-conflux-reporters
+- [x] truffle-conflux-reporters
 
 - [ ] truffle-conflux-artifactor             
 
-- [ ] truffle-conflux-contract-sources       
+- [x] truffle-conflux-contract-sources       
 
-- [ ] truffle-conflux-expect                
+- [x] truffle-conflux-expect                
 
 - [ ] truffle-conflux-require
 
-- [ ] truffle-conflux-blockchain-utils       
+- [x] truffle-conflux-blockchain-utils       
 
 - [ ] truffle-conflux-core
 
 - [ ] truffle-conflux-external-compile       
 
-- [ ] truffle-conflux-resolver
+- [x] truffle-conflux-resolver
 
 - [ ] truffle-conflux-box                    
 
@@ -66,6 +66,6 @@
 
 - [ ] truffle-conflux-environment           
 
-- [ ] truffle-conflux-provisioner
+- [x] truffle-conflux-provisioner
 
 ## 二。truffle-conflux-init repo build pass
