@@ -54,7 +54,7 @@
 
 - [ ] truffle-conflux-migrate                
 
-- [ ] truffle-conflux-workflow-compile
+- [x] truffle-conflux-workflow-compile
 
 - [x] truffle-conflux-config                 
 
