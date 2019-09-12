@@ -1,6 +1,6 @@
 ## 一。 已经Truffle-Conflux Test case Pass的subpackages
 
-- [ ]  truffle-conflux            
+- [ ] truffle-conflux            
 
 - [x] truffle-conflux-contract-schema      
 
@@ -8,7 +8,7 @@
 
 - [x] truffle-conflux-reporters
 
-- [ ] truffle-conflux-artifactor             
+- [x] truffle-conflux-artifactor   ----部分Test Case 需要ganache-core， ganache-cli 支持           
 
 - [x] truffle-conflux-contract-sources       
 
@@ -28,9 +28,9 @@
 
 - [x] truffle-conflux-debug-utils            
 
-- [ ] truffle-conflux-hdwallet-provider      
+- [x] truffle-conflux-hdwallet-provider      
 
-- [ ] truffle-conflux-sawtooth-seth-provider
+- [x] truffle-conflux-sawtooth-seth-provider
 
 - [x] truffle-conflux-code-utils             
 
