@@ -8,11 +8,14 @@
 
 - [ ] truffle-conflux-decoder    ----部分Test Case 需要DS的 @type/conflux-web             
 
-- [ ] truffle-conflux-migrate 
 
-- [ ] truffle-conflux-deployer   
+
+
 
 --------------------------------------
+- [x] truffle-conflux-migrate 
+
+- [x] truffle-conflux-deployer   ----部分Test Case 需要ganache-core， ganache-cli 支持 
 
 - [x] truffle-conflux-solidity-loader
 
