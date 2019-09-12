@@ -10,13 +10,13 @@
 
 - [ ] truffle-conflux-migrate 
 
-- [ ] truffle-conflux-solidity-loader
-
 - [ ] truffle-conflux-deployer   
 
-- [x] truffle-conflux-environment   
-
 --------------------------------------
+
+- [x] truffle-conflux-solidity-loader
+
+- [x] truffle-conflux-environment   
 
 - [x] truffle-conflux-contract-schema      
 
