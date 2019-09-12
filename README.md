@@ -14,7 +14,7 @@
 
 - [ ] truffle-conflux-deployer   
 
-- [ ] truffle-conflux-environment   
+- [x] truffle-conflux-environment   
 
 --------------------------------------
 
