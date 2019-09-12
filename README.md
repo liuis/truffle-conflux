@@ -1,6 +1,22 @@
 ## 一。 已经Truffle-Conflux Test case Pass的subpackages
 
-- [ ] truffle-conflux            
+- [ ] truffle-conflux 
+
+- [ ] truffle-conflux-core
+
+- [ ] truffle-conflux-debugger 
+
+- [ ] truffle-conflux-decoder    ----部分Test Case 需要DS的 @type/conflux-web             
+
+- [ ] truffle-conflux-migrate 
+
+- [ ] truffle-conflux-solidity-loader
+
+- [ ] truffle-conflux-deployer   
+
+- [ ] truffle-conflux-environment   
+
+--------------------------------------
 
 - [x] truffle-conflux-contract-schema      
 
@@ -18,8 +34,6 @@
 
 - [x] truffle-conflux-blockchain-utils       
 
-- [ ] truffle-conflux-core
-
 - [x] truffle-conflux-external-compile       
 
 - [x] truffle-conflux-resolver
@@ -32,13 +46,9 @@
 
 - [x] truffle-conflux-sawtooth-seth-provider
 
-- [x] truffle-conflux-code-utils             
-
-- [ ] truffle-conflux-debugger               
+- [x] truffle-conflux-code-utils                           
 
 - [x] truffle-conflux-interface-adapter      
-
-- [ ] truffle-conflux-solidity-loader
 
 - [x] truffle-conflux-compile    ----部分Test Case 需要ganache-core， ganache-cli 支持               
 
@@ -49,23 +59,15 @@
 - [x] truffle-conflux-solidity-utils
 
 - [x] truffle-conflux-compile-vyper ----部分Test Case 需要ganache-core， ganache-cli 支持            
-
-- [ ] truffle-conflux-decoder    ----部分Test Case 需要DS的 @type/conflux-web             
-
-- [ ] truffle-conflux-migrate                
-
+         
 - [x] truffle-conflux-workflow-compile
 
 - [x] truffle-conflux-config                 
-
-- [ ] truffle-conflux-deployer               
-
+            
 - [x] truffle-conflux-provider  ----部分Test Case 需要ganache-core， ganache-cli 支持
 
 - [x] truffle-conflux-contract  ----部分Test Case 需要ganache-core， ganache-cli 支持             
-
-- [ ] truffle-conflux-environment           
-
+        
 - [x] truffle-conflux-provisioner
 
 ## 二。truffle-conflux-init repo build pass
