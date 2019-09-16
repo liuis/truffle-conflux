@@ -14,19 +14,20 @@
     "require-from-string": "^2.0.2",
     "semver": "^5.6.0",
     "solc": "^0.5.0",
-    "truffle-conflux-config": "../truffle-conflux-config",
-    "truffle-conflux-contract-sources": "../truffle-conflux-contract-sources",
-    "truffle-conflux-error": "../truffle-conflux-error",
-    "truffle-conflux-expect": "../truffle-conflux-expect"
+    "truffle-conflux-config": "file:../truffle-conflux-config",
+    "truffle-conflux-contract-sources": "file:../truffle-conflux-contract-sources",
+    "truffle-conflux-error": "file:../truffle-conflux-error",
+    "truffle-conflux-expect": "file:../truffle-conflux-expect"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.1",
+    "chai": "^4.2.0",
     "mocha": "5.2.0",
     "sinon": "^7.2.2",
     "tmp": "0.0.33",
-    "truffle-conflux-resolver": "../truffle-conflux-resolver"
+    "truffle-conflux-resolver": "file:../truffle-conflux-resolver"
   },
   "babel": {
     "presets": [

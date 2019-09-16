@@ -33,6 +33,7 @@ module.exports = {
 
   test_connection: function(provider, callback) {
     var web3 = new Web3Shim({ provider });
+    //console.log("web3:", web3)
     var fail = new Error(
       "Could not connect to your RPC client. Please check your RPC configuration."
     );

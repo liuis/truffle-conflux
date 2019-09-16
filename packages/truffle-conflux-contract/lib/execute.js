@@ -103,7 +103,7 @@ var execute = {
     var constructor = this;
 
     return function() {
-      var defaultBlock = "latest";
+      var defaultBlock = "latest_state";
       var args = Array.prototype.slice.call(arguments);
       var lastArg = args[args.length - 1];
       var promiEvent = new Web3PromiEvent();

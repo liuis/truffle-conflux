@@ -106,7 +106,7 @@ module.exports = Contract => ({
     if (this.network_id && this.networks[this.network_id] != null) {
       try {
         //const { gasLimit } = await this.web3.eth.getBlock("latest");
-        const { gasLimit } = await this.web3.cfx.getBlock("latest");
+        const { gasLimit } = await this.web3.cfx.getBlock("latest_state");
         return { id: this.network_id, blockLimit: gasLimit };
       } catch (error) {
         throw error;
@@ -119,7 +119,7 @@ module.exports = Contract => ({
       //const { gasLimit } = await this.web3.eth.getBlock("latest");
 
       const chainNetworkID = await this.web3.cfx.net.getId();
-      const { gasLimit } = await this.web3.cfx.getBlock("latest");
+      const { gasLimit } = await this.web3.cfx.getBlock("latest_state");
       return await utils.setInstanceNetworkID(this, chainNetworkID, gasLimit);
     } catch (error) {
       throw error;

@@ -14,11 +14,11 @@
     "colors": "^1.1.2",
     "eslint": "^5.5.0",
     "minimatch": "^3.0.4",
-    "truffle-conflux-compile": "../truffle-conflux-compile"
+    "truffle-conflux-compile": "file:../truffle-conflux-compile"
   },
   "devDependencies": {
     "mocha": "5.2.0",
-    "truffle-conflux-config": "../truffle-conflux-config"
+    "truffle-conflux-config": "file:../truffle-conflux-config"
   },
   "keywords": [
     "compile",

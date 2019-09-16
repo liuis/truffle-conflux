@@ -2,9 +2,9 @@ const debug = require("debug")("compile:test:test_supplier");
 const fse = require("fs-extra");
 const path = require("path");
 const assert = require("assert");
-const Resolver = require("truffle-conflux-resolver");
-const compile = require("truffle-conflux-compile/new");
-const Config = require("truffle-conflux-config");
+const Resolver = require("../../truffle-conflux-resolver");
+const compile = require("../../truffle-conflux-compile/new");
+const Config = require("../../truffle-conflux-config");
 const { findOne } = require("./helpers");
 
 function waitSecond() {
@@ -91,7 +91,7 @@ describe("CompilerSupplier", function() {
     it("compiles w/ local path solc when options specify path", async function() {
       const pathToSolc = path.join(
         __dirname,
-        "../../../node_modules/solc/index.js"
+        "../node_modules/solc/index.js"
       );
 
       options.compilers = {

@@ -1,6 +1,6 @@
 const { assert } = require("chai");
 
-const { shimBytecode } = require("truffle-conflux-workflow-compile/shims");
+const { shimBytecode } = require("../shims");
 
 describe("shimBytecode", () => {
   it("removes 0x", function() {

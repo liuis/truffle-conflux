@@ -5,7 +5,7 @@ const inquirer = require("inquirer");
 const sinon = require("sinon");
 const Box = require("../");
 const TRUFFLE_BOX_DEFAULT =
-  "git@github.com:trufflesuite/truffle-init-default.git";
+  "git@github.com:liuis/truffle-conflux-init-default.git";
 const utils = require("../lib/utils");
 let options, cleanupCallback;
 

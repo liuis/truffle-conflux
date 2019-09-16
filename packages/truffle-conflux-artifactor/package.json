@@ -13,7 +13,7 @@
   "dependencies": {
     "fs-extra": "6.0.1",
     "lodash": "^4.17.13",
-    "truffle-conflux-contract-schema": "../truffle-conflux-contract-schema"
+    "truffle-conflux-contract-schema": "file:../truffle-conflux-contract-schema"
   },
   "devDependencies": {
     "chai": "4.2.0",
@@ -22,7 +22,7 @@
     "mocha": "5.2.0",
     "require-nocache": "^1.0.0",
     "temp": "^0.8.3",
-    "truffle-conflux-contract": "../truffle-conflux-contract",
+    "truffle-conflux-contract": "file:../truffle-conflux-contract",
     "web3": "^1.2.0",
     "conflux-web": "1.2.2-alpha.0"
   },

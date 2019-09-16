@@ -5,13 +5,13 @@
   "dependencies": {
     "fs-extra": "^7.0.1",
     "mkdirp": "^0.5.1",
-    "truffle-conflux-artifactor": "../truffle-conflux-artifactor",
-    "truffle-conflux-compile": "../truffle-conflux-compile",
-    "truffle-conflux-compile-vyper": "../truffle-conflux-compile-vyper",
-    "truffle-conflux-config": "../truffle-conflux-config",
-    "truffle-conflux-expect": "../truffle-conflux-expect",
-    "truffle-conflux-external-compile": "../truffle-conflux-external-compile",
-    "truffle-conflux-resolver": "../truffle-conflux-resolver"
+    "truffle-conflux-artifactor": "file:../truffle-conflux-artifactor",
+    "truffle-conflux-compile": "file:../truffle-conflux-compile",
+    "truffle-conflux-compile-vyper": "file:../truffle-conflux-compile-vyper",
+    "truffle-conflux-config": "file:../truffle-conflux-config",
+    "truffle-conflux-expect": "file:../truffle-conflux-expect",
+    "truffle-conflux-external-compile": "file:../truffle-conflux-external-compile",
+    "truffle-conflux-resolver": "file:../truffle-conflux-resolver"
   },
   "main": "index.js",
   "scripts": {
@@ -29,6 +29,7 @@
   },
   "gitHead": "b207efb3c1409746537293b3e0fc27350029188e",
   "devDependencies": {
+    "chai": "^4.2.0",
     "debug": "^4.1.1",
     "mocha": "5.2.0"
   }

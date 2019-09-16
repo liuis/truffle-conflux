@@ -18,8 +18,8 @@
     "find-up": "^1.1.2",
     "loader-utils": "^1.1.0",
     "schema-utils": "^1.0.0",
-    "truffle-conflux-config": "../truffle-conflux-config",
-    "truffle-conflux-core": "../truffle-conflux-core"
+    "truffle-conflux-config": "file:../truffle-conflux-config",
+    "truffle-conflux-core": "file:../truffle-conflux-core"
   },
   "devDependencies": {
     "standard": "^11.0.1"

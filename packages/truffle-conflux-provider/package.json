@@ -4,9 +4,9 @@
   "license": "MIT",
   "author": "Tim Coulter <tim.coulter@consensys.net>",
   "homepage": "https://github.com/trufflesuite/truffle-conflux-provider#readme",
-  "repository": "https://github.com/trufflesuite/truffle/tree/master/packages/truffle-conflux-provider",
+  "repository": "https://github.com/liuis/truffle-conflux/tree/master/packages/truffle-conflux-provider",
   "bugs": {
-    "url": "https://github.com/trufflesuite/truffle-conflux-provider/issues"
+    "url": "https://github.com/liuis/truffle-conflux-provider/issues"
   },
   "version": "0.1.13",
   "main": "index.js",
@@ -14,8 +14,8 @@
     "test": "mocha"
   },
   "dependencies": {
-    "truffle-conflux-error": "../truffle-conflux-error",
-    "truffle-conflux-interface-adapter": "../truffle-conflux-interface-adapter",
+    "truffle-conflux-error": "file:../truffle-conflux-error",
+    "truffle-conflux-interface-adapter": "file:../truffle-conflux-interface-adapter",
     "web3": "^1.2.0",
     "conflux-web": "1.2.2-alpha.0"
   },

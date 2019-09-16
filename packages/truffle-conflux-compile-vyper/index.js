@@ -6,8 +6,8 @@ const async = require("async");
 const colors = require("colors");
 const minimatch = require("minimatch");
 
-const find_contracts = require("truffle-conflux-contract-sources");
-const Profiler = require("truffle-conflux-compile/profiler");
+const find_contracts = require("../truffle-conflux-contract-sources");
+const Profiler = require("../truffle-conflux-compile/profiler");
 
 const compiler = {
   name: "vyper",

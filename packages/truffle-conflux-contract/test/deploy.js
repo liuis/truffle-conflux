@@ -220,7 +220,7 @@ describe("Deployments", function() {
       let iterations = 1000; // # of times to set a uint in a loop, consuming gas.
 
       const estimate = await Example.new.estimateGas(iterations);
-      const block = await web3.eth.getBlock("latest");
+      const block = await web3.eth.getBlock("latest_state");
       const multiplier = Example.gasMultiplier;
 
       assert(multiplier === 1.25, "Multiplier should be initialized to 1.25");

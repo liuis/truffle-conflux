@@ -1,14 +1,14 @@
 const assert = require("chai").assert;
 const Artifactor = require("../");
-const contract = require("../truffle-conflux-contract");
-const Schema = require("../truffle-conflux-contract-schema");
+const contract = require("../../truffle-conflux-contract");
+const Schema = require("../../truffle-conflux-contract-schema");
 const temp = require("temp").track();
 const path = require("path");
 const fs = require("fs");
 const requireNoCache = require("require-nocache")(module);
-const Compile = require("../truffle-conflux-compile/legacy");
+const Compile = require("../../truffle-conflux-compile/legacy");
 const Ganache = require("ganache-core");
-const Web3 = require("web3");
+const Web3 = require("conflux-web");
 const { promisify } = require("util");
 
 describe("artifactor + require", () => {

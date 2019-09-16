@@ -102,7 +102,7 @@ const Box = {
 
     const tmpDir = tmp.dirSync({ unsafeCleanup });
     await Box.unbox(
-      `https://github.com/trufflesuite/truffle-init-${name}`,
+      `https://github.com/liuis/truffle-conflux-init-${name}`,
       tmpDir.name,
       options
     );

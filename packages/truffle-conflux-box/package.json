@@ -6,7 +6,7 @@
   "scripts": {
     "test": "mocha --timeout 10000"
   },
-  "repository": "https://github.com/trufflesuite/truffle/tree/master/packages/truffle-conflux-box",
+  "repository": "https://github.com/liuis/truffle-conflux/tree/master/packages/truffle-conflux-box",
   "keywords": [
     "ethereum",
     "truffle",
@@ -26,7 +26,7 @@
     "request": "^2.85.0",
     "request-promise-native": "^1.0.7",
     "tmp": "0.0.33",
-    "truffle-conflux-config": "../truffle-conflux-config",
+    "truffle-conflux-config": "file:../truffle-conflux-config",
     "vcsurl": "^0.1.1"
   },
   "publishConfig": {

@@ -23,8 +23,8 @@
     "find-up": "^2.1.0",
     "lodash": "^4.17.13",
     "original-require": "1.0.1",
-    "truffle-conflux-error": "../truffle-conflux-error",
-    "truffle-conflux-provider": "../truffle-conflux-provider"
+    "truffle-conflux-error": "file:../truffle-conflux-error",
+    "truffle-conflux-provider": "file:../truffle-conflux-provider"
   },
   "publishConfig": {
     "access": "public"

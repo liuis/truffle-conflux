@@ -21,10 +21,10 @@
   "dependencies": {
     "bignumber.js": "^7.2.1",
     "ethers": "^4.0.0-beta.1",
-    "truffle-conflux-blockchain-utils": "../truffle-conflux-blockchain-utils",
-    "truffle-conflux-contract-schema": "../truffle-conflux-contract-schema",
-    "truffle-conflux-error": "../truffle-conflux-error",
-    "truffle-conflux-interface-adapter": "../truffle-conflux-interface-adapter",
+    "truffle-conflux-blockchain-utils": "file:../truffle-conflux-blockchain-utils",
+    "truffle-conflux-contract-schema": "file:../truffle-conflux-contract-schema",
+    "truffle-conflux-error": "file:../truffle-conflux-error",
+    "truffle-conflux-interface-adapter": "file:../truffle-conflux-interface-adapter",
     "web3": "^1.2.0",
     "conflux-web": "1.2.2-alpha.0",
     "web3-core-promievent": "^1.2.0",
@@ -41,7 +41,7 @@
     "ganache-core": "2.5.7",
     "mocha": "5.2.0",
     "temp": "^0.8.3",
-    "truffle-conflux-compile": "../truffle-conflux-compile",
+    "truffle-conflux-compile": "file:../truffle-conflux-compile",
     "uglify-es": "^3.3.9"
   },
   "keywords": [

@@ -134,7 +134,7 @@ describe("Events", function() {
   it("should `getPastEvents`", async function() {
     const signatures = ["ExampleEvent", "SpecialEvent"];
     const example = await Example.new(1);
-    const options = { fromBlock: 0, toBlock: "latest" };
+    const options = { fromBlock: 0, toBlock: "latest_state" };
 
     await example.triggerEvent();
     await example.triggerEvent();

@@ -46,7 +46,7 @@ const reason = {
       jsonrpc: "2.0",
       //method: 'eth_call',
       method: "cfx_call",
-      params: [params, "latest"],
+      params: [params, "latest_state"],
       id: new Date().getTime()
     };
 

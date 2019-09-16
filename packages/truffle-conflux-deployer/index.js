@@ -1,11 +1,13 @@
-const expect = require("truffle-conflux-expect");
+const expect = require("../truffle-conflux-expect");
 const Emittery = require("emittery");
 const DeferredChain = require("./src/deferredchain");
 const Deployment = require("./src/deployment");
 const link = require("./src/actions/link");
 const create = require("./src/actions/new");
-const Legacy = require("truffle-conflux-legacy-system");
-const { getLegacyNetworkTypes } = require("truffle-conflux-interface-adapter");
+const Legacy = require("../truffle-conflux-legacy-system");
+const {
+  getLegacyNetworkTypes
+} = require("../truffle-conflux-interface-adapter");
 
 class Deployer extends Deployment {
   constructor(options) {
