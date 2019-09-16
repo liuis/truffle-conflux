@@ -1,70 +1,76 @@
-##已经Truffle-Conflux Test case Pass的subpackages
+## 一。 已经Truffle-Conflux Test case Pass的subpackages
 
-- [ ]  truffle-conflux            
-
-
-- [ ] truffle-conflux-contract-schema        
-
-- [ ] truffle-conflux-error                  
-
-- [ ] truffle-conflux-reporters
-
-- [ ] truffle-conflux-artifactor             
-
-- [ ] truffle-conflux-contract-sources       
-
-- [ ] truffle-conflux-expect                
-
-- [ ] truffle-conflux-require
-
-- [ ] truffle-conflux-blockchain-utils       
+- [ ] truffle-conflux 
 
 - [ ] truffle-conflux-core
 
-- [ ] truffle-conflux-external-compile       
+- [ ] truffle-conflux-debugger 
 
-- [ ] truffle-conflux-resolver
+- [ ] truffle-conflux-decoder    ----部分Test Case 需要DS的 @type/conflux-web             
 
-- [ ] truffle-conflux-box                    
 
-- [ ] truffle-conflux-debug-utils            
 
-- [ ] truffle-conflux-hdwallet-provider      
 
-- [ ] truffle-conflux-sawtooth-seth-provider
 
-- [ ] truffle-conflux-code-utils             
+--------------------------------------
+- [x] truffle-conflux-migrate 
 
-- [ ] truffle-conflux-debugger               
+- [x] truffle-conflux-deployer   ----部分Test Case 需要ganache-core， ganache-cli 支持 
 
-- [ ] truffle-conflux-interface-adapter      
+- [x] truffle-conflux-solidity-loader
 
-- [ ] truffle-conflux-solidity-loader
+- [x] truffle-conflux-environment   
 
-- [ ] truffle-conflux-compile                
+- [x] truffle-conflux-contract-schema      
 
-- [ ] truffle-conflux-decode-utils           
+- [x] truffle-conflux-error                  
 
-- [ ] truffle-conflux-legacy-system          
+- [x] truffle-conflux-reporters
 
-- [ ] truffle-conflux-solidity-utils
+- [x] truffle-conflux-artifactor   ----部分Test Case 需要ganache-core， ganache-cli 支持           
 
-- [ ] truffle-conflux-compile-vyper          
+- [x] truffle-conflux-contract-sources       
 
-- [ ] truffle-conflux-decoder                
+- [x] truffle-conflux-expect                
 
-- [ ] truffle-conflux-migrate                
+- [x] truffle-conflux-require
 
-- [ ] truffle-conflux-workflow-compile
+- [x] truffle-conflux-blockchain-utils       
 
-- [ ] truffle-conflux-config                 
+- [x] truffle-conflux-external-compile       
 
-- [ ] truffle-conflux-deployer               
+- [x] truffle-conflux-resolver
 
-- [ ] truffle-conflux-provider
+- [x] truffle-conflux-box                    
 
-- [ ] truffle-conflux-contract               
+- [x] truffle-conflux-debug-utils            
 
-- [ ] truffle-conflux-environment           
+- [x] truffle-conflux-hdwallet-provider      
 
-- [ ] truffle-conflux-provisioner
+- [x] truffle-conflux-sawtooth-seth-provider
+
+- [x] truffle-conflux-code-utils                           
+
+- [x] truffle-conflux-interface-adapter      
+
+- [x] truffle-conflux-compile    ----部分Test Case 需要ganache-core， ganache-cli 支持               
+
+- [x] truffle-conflux-decode-utils  ----部分Test Case 需要DS的 @type/conflux-web          
+
+- [x] truffle-conflux-legacy-system          
+
+- [x] truffle-conflux-solidity-utils
+
+- [x] truffle-conflux-compile-vyper ----部分Test Case 需要ganache-core， ganache-cli 支持            
+         
+- [x] truffle-conflux-workflow-compile
+
+- [x] truffle-conflux-config                 
+            
+- [x] truffle-conflux-provider  ----部分Test Case 需要ganache-core， ganache-cli 支持
+
+- [x] truffle-conflux-contract  ----部分Test Case 需要ganache-core， ganache-cli 支持             
+        
+- [x] truffle-conflux-provisioner
+
+## 二。truffle-conflux-init repo build pass
