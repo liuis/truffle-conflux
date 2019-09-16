@@ -1,6 +1,6 @@
 import BN from "bn.js";
 
-import * as DecodeUtils from "truffle-conflux-decode-utils";
+import * as DecodeUtils from "../../../truffle-conflux-decode-utils";
 
 /**
  * read word from memory

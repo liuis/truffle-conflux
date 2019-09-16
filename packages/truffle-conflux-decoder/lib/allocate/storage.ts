@@ -5,9 +5,9 @@ import { StoragePointer } from "../types/pointer";
 import { StorageAllocations, StorageAllocation, StorageMemberAllocations } from "../types/allocation";
 import { StorageLength, isWordsLength, Range } from "../types/storage";
 import { UnknownBaseContractIdError, UnknownUserDefinedTypeError } from "../types/errors";
-import { AstDefinition, AstReferences } from "truffle-conflux-decode-utils";
+import { AstDefinition, AstReferences } from "../../../truffle-conflux-decode-utils";
 import { readDefinition } from "../read/constant"
-import * as DecodeUtils from "truffle-conflux-decode-utils";
+import * as DecodeUtils from "../../../truffle-conflux-decode-utils";
 import BN from "bn.js";
 
 //contracts contains only the contracts to be allocated; any base classes not

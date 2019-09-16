@@ -10,11 +10,11 @@
     "baseUrl": ".",
     "lib": ["es2017"],
     "paths": {
-      "web3": ["../../node_modules/@types/web3/index", "node_modules/web3/index"],
-      "web3/types": ["../../node_modules/@types/web3/types", "node_modules/web3/types"],
-      "web3/eth/types": ["../../node_modules/@types/web3/eth/types", "node_modules/web3/eth/types"]
+      "conflux-web": ["../../node_modules/@types/conflux-web/index", "node_modules/conflux-web/index"],
+      "conflux-web/types": ["../../node_modules/@types/conflux-web/types", "node_modules/conflux-web/types"],
+      "conflux-web/cfx/types": ["../../node_modules/@types/conflux-web/cfx/types", "node_modules/conflux-web/cfx/types"]
     },
-    "rootDir": "lib",
+    "rootDir": "../",  
     "typeRoots": [
       "./typings",
       "../../**/node_modules/@types/bn.js",

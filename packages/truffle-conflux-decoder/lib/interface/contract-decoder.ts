@@ -1,10 +1,10 @@
 import debugModule from "debug";
 const debug = debugModule("decoder:interface:contract-decoder");
 
-import * as DecodeUtils from "truffle-conflux-decode-utils";
+import * as DecodeUtils from "../../../truffle-conflux-decode-utils";
 import AsyncEventEmitter from "async-eventemitter";
-import Web3 from "web3";
-import { ContractObject } from "truffle-conflux-contract-schema/spec";
+import Web3 from "conflux-web";
+import { ContractObject } from "../../../truffle-conflux-contract-schema/spec";
 import BN from "bn.js";
 import { EvmInfo } from "../types/evm";
 import * as general from "../allocate/general";
@@ -15,10 +15,10 @@ import { Slot, isWordsLength } from "../types/storage";
 import { DecoderRequest, isStorageRequest, isCodeRequest } from "../types/request";
 import { ContractBeingDecodedHasNoNodeError } from "../types/errors";
 import decode from "../decode";
-import { Definition as DefinitionUtils, EVM, AstDefinition, AstReferences } from "truffle-conflux-decode-utils";
-import { BlockType, Transaction } from "web3/eth/types";
-import { EventLog, Log } from "web3/types";
-import { Provider } from "web3/providers";
+import { Definition as DefinitionUtils, EVM, AstDefinition, AstReferences } from "../../../truffle-conflux-decode-utils";
+import { BlockType, Transaction } from "conflux-web/cfx/types";
+import { EventLog, Log } from "conflux-web/types";
+import { Provider } from "conflux-web/providers";
 import abiDecoder from "abi-decoder";
 import isEqual from "lodash.isequal"; //util.isDeepStrictEqual doesn't exist in Node 8
 
@@ -186,7 +186,7 @@ export default class TruffleContractDecoder extends AsyncEventEmitter {
   }
 
   public async init(): Promise<void> {
-    this.contractNetwork = (await this.web3.eth.net.getId()).toString();
+    this.contractNetwork = (await this.web3.cfx.net.getId()).toString();
     if(this.contractAddress === undefined) {
       this.contractAddress = this.contract.networks[this.contractNetwork].address;
     }
@@ -209,7 +209,7 @@ export default class TruffleContractDecoder extends AsyncEventEmitter {
     this.stateVariableReferences = this.storageAllocations[this.contractNode.id].members;
     debug("stateVariableReferences %O", this.stateVariableReferences);
 
-    this.contractCode = await this.web3.eth.getCode(this.contractAddress);
+    this.contractCode = await this.web3.cfx.getCode(this.contractAddress);
   }
 
   private async decodeVariable(variable: StorageMemberAllocation, block: number): Promise<DecodedVariable> {
@@ -250,16 +250,16 @@ export default class TruffleContractDecoder extends AsyncEventEmitter {
     };
   }
 
-  public async state(block: BlockType = "latest"): Promise<ContractState | undefined> {
+  public async state(block: BlockType = "latest_state"): Promise<ContractState | undefined> {
     let blockNumber = typeof block === "number"
       ? block
-      : (await this.web3.eth.getBlock(block)).number;
+      : (await this.web3.cfx.getBlock(block)).number;
 
     let result: ContractState = {
       name: this.contract.contractName,
       code: this.contractCode,
-      balance: new BN(await this.web3.eth.getBalance(this.contractAddress, blockNumber)),
-      nonce: new BN(await this.web3.eth.getTransactionCount(this.contractAddress, blockNumber)),
+      balance: new BN(await this.web3.cfx.getBalance(this.contractAddress, blockNumber)),
+      nonce: new BN(await this.web3.cfx.getTransactionCount(this.contractAddress, blockNumber)),
       variables: {}
     };
 
@@ -279,10 +279,10 @@ export default class TruffleContractDecoder extends AsyncEventEmitter {
     return result;
   }
 
-  public async variable(nameOrId: string | number, block: BlockType = "latest"): Promise<DecodedVariable | undefined> {
+  public async variable(nameOrId: string | number, block: BlockType = "latest_state"): Promise<DecodedVariable | undefined> {
     let blockNumber = typeof block === "number"
       ? block
-      : (await this.web3.eth.getBlock(block)).number;
+      : (await this.web3.cfx.getBlock(block)).number;
 
     let variable: StorageMemberAllocation;
     if(typeof nameOrId === "number")
@@ -315,7 +315,7 @@ export default class TruffleContractDecoder extends AsyncEventEmitter {
     }
     //otherwise, get it, cache it, and return it
     let word = DecodeUtils.Conversion.toBytes(
-      await this.web3.eth.getStorageAt(
+      await this.web3.cfx.getStorageAt(
         address,
         slot,
         block
@@ -337,7 +337,7 @@ export default class TruffleContractDecoder extends AsyncEventEmitter {
     }
     //otherwise, get it, cache it, and return it
     let code = DecodeUtils.Conversion.toBytes(
-      await this.web3.eth.getCode(
+      await this.web3.cfx.getCode(
         address,
         block
       )
@@ -438,8 +438,8 @@ export default class TruffleContractDecoder extends AsyncEventEmitter {
     return contractEvent;
   }
 
-  public async events(name: string | null = null, block: BlockType = "latest"): Promise<ContractEvent[]> {
-    const web3Contract = new this.web3.eth.Contract(this.contract.abi, this.contractAddress);
+  public async events(name: string | null = null, block: BlockType = "latest_state"): Promise<ContractEvent[]> {
+    const web3Contract = new this.web3.cfx.Contract(this.contract.abi, this.contractAddress);
     const events = await web3Contract.getPastEvents(name, {
       fromBlock: block,
       toBlock: block

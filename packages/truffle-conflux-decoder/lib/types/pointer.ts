@@ -1,4 +1,4 @@
-import { AstDefinition } from "truffle-conflux-decode-utils";
+import { AstDefinition } from "../../../truffle-conflux-decode-utils";
 import { Range } from "./storage";
 
 export type DataPointer = StackPointer | MemoryPointer | StoragePointer

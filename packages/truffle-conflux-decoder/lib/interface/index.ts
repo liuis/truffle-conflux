@@ -1,10 +1,10 @@
-import { AstDefinition } from "truffle-conflux-decode-utils";
+import { AstDefinition } from "../../../truffle-conflux-decode-utils";
 import { DataPointer } from "../types/pointer";
 import { EvmInfo } from "../types/evm";
 import decode from "../decode";
 import TruffleDecoder from "./contract-decoder";
-import { ContractObject } from "truffle-conflux-contract-schema/spec";
-import { Provider } from "web3/providers";
+import { ContractObject } from "../../../truffle-conflux-contract-schema/spec";
+import { Provider } from "conflux-web/providers";
 import { DecoderRequest } from "../types/request";
 
 export { getStorageAllocations, storageSize } from "../allocate/storage";

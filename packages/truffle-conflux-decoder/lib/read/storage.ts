@@ -1,7 +1,7 @@
 import debugModule from "debug";
 const debug = debugModule("decoder:read:storage");
 
-import * as DecodeUtils from "truffle-conflux-decode-utils";
+import * as DecodeUtils from "../../../truffle-conflux-decode-utils";
 import { Slot, Range } from "../types/storage";
 import { WordMapping } from "../types/evm";
 import { DecoderRequest } from "../types/request";
