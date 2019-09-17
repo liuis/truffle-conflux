@@ -74,3 +74,35 @@
 - [x] truffle-conflux-provisioner
 
 ## 二。truffle-conflux-init repo build pass
+
+
+
+## truffle-conflux RPC method
+
+cfx_getLogs
+
+cfx_estimateGas
+
+cfx_call
+
+cfx_getCode 
+
+cfx_getBlock
+
+net.getId()
+
+getTransaction
+
+web3.cfx.getTransactionReceipt
+
+web3.cfx.getAccounts()
+
+web3.cfx.getBalance
+
+web3.cfx.Contract
+
+web3.cfx.sendTransaction
+
+web3.cfx.getBlockByEpochNumber
+
+web3.cfx.getBlockNumber
