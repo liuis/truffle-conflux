@@ -5,7 +5,7 @@ const assert = require("assert");
 const Server = require("../server");
 const Reporter = require("../reporter");
 const sandbox = require("../sandbox");
-const Web3 = require("web3");
+const Web3 = require("conflux-web");
 
 describe("migration errors", function() {
   let config;
@@ -30,7 +30,7 @@ describe("migration errors", function() {
       keepAlive: false
     });
     web3 = new Web3(provider);
-    networkId = await web3.eth.net.getId();
+    networkId = await web3.cfx.net.getId();
   });
 
   it("should error and stop", function(done) {

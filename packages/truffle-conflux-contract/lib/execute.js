@@ -188,7 +188,7 @@ var execute = {
             return;
           }
 
-          //deferred = web3.eth.sendTransaction(params);
+          //deferred = web3.cfx.sendTransaction(params);
           deferred = web3.cfx.sendTransaction(params);
           deferred.catch(override.start.bind(constructor, context));
           handlers.setup(deferred, context);
@@ -231,7 +231,7 @@ var execute = {
             arguments: args
           };
 
-          //var contract = new web3.eth.Contract(constructor.abi);
+          //var contract = new web3.cfx.Contract(constructor.abi);
           var contract = new web3.cfx.Contract(constructor.abi);
           params.data = contract.deploy(options).encodeABI();
 
@@ -249,7 +249,7 @@ var execute = {
             contract: constructor
           });
 
-          //deferred = web3.eth.sendTransaction(params);
+          //deferred = web3.cfx.sendTransaction(params);
           deferred = web3.cfx.sendTransaction(params);
           handlers.setup(deferred, context);
 
@@ -268,7 +268,7 @@ var execute = {
               return context.promiEvent.reject(error);
             }
 
-            //var web3Instance = new web3.eth.Contract(
+            //var web3Instance = new web3.cfx.Contract(
             var web3Instance = new web3.cfx.Contract(
               constructor.abi,
               receipt.contractAddress
@@ -450,7 +450,7 @@ var execute = {
 
         delete res.params["data"]; // Is this necessary?
 
-        var instance = new constructor.web3.eth.Contract(
+        var instance = new constructor.web3.cfx.Contract(
           constructor.abi,
           res.params
         );

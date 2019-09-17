@@ -2,7 +2,7 @@
 var assert = require("chai").assert;
 var temp = require("temp").track();
 var contract = require("../");
-var Web3 = require("web3");
+var Web3 = require("conflux-web");
 var debug = require("debug")("ganache-core");
 var Ganache = require("ganache-core");
 var path = require("path");
@@ -29,7 +29,7 @@ describe("Library linking", function() {
   web3.setProvider(provider);
 
   before(function() {
-    return web3.eth.net.getId().then(function(id) {
+    return web3.cfx.net.getId().then(function(id) {
       network_id = id;
     });
   });
@@ -114,7 +114,7 @@ describe("Library linking with contract objects", function() {
   web3.setProvider(provider);
 
   before(function() {
-    return web3.eth.net.getId().then(function(id) {
+    return web3.cfx.net.getId().then(function(id) {
       network_id = id;
     });
   });
@@ -186,7 +186,7 @@ describe("Library linking with contract objects", function() {
   });
 
   before(function(done) {
-    web3.eth.getAccounts(function(err, accs) {
+    web3.cfx.getAccounts(function(err, accs) {
       accounts = accs;
 
       ExampleLibrary.defaults({

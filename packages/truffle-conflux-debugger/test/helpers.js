@@ -63,7 +63,7 @@ export async function prepareContracts(provider, sources = {}, migrations) {
 export function getAccounts(provider) {
   let web3 = new Web3(provider);
   return new Promise(function(accept, reject) {
-    web3.eth.getAccounts(function(err, accounts) {
+    web3.cfx.getAccounts(function(err, accounts) {
       if (err) return reject(err);
       accept(accounts);
     });

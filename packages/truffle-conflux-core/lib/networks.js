@@ -304,7 +304,7 @@ var Networks = {
       provider,
       networkType: network_options.type
     });
-    web3.eth.net
+    web3.cfx.net
       .getId(current_network_id => {
         if (first === current_network_id) {
           return callback(null, true);

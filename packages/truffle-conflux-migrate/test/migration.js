@@ -48,11 +48,11 @@ describe("Migration", () => {
       migration._load.restore();
     });
 
-    it("calls web3.eth.getBlock('latest')", done => {
+    it("calls web3.cfx.getBlock('latest_state')", done => {
       migration
         .run(options)
         .then(() => {
-          assert(fakeWeb3.eth.getBlock.calledWith("latest"));
+          assert(fakeWeb3.cfx.getBlock.calledWith("latest_state"));
           done();
         })
         .catch(error => {

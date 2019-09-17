@@ -22,7 +22,7 @@ describe("Quorum", function() {
     var hookedProvider = {
       sendAsync: function() {
         const payload = arguments[0];
-
+        //TODO  quorum  , Conflux-Chain not supported, it's other chain
         if (payload.method == "eth_sendTransaction") {
           transactionPayloads.push(payload);
         }

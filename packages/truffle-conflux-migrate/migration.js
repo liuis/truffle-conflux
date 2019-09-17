@@ -32,7 +32,7 @@ class Migration {
    */
   async _load(options, context, deployer, resolver) {
     // Load assets and run `execute`
-    const accounts = await context.web3.eth.getAccounts();
+    const accounts = await context.web3.cfx.getAccounts();
     const requireOptions = {
       file: this.file,
       context: context,
@@ -148,7 +148,7 @@ class Migration {
         path.relative(options.migrations_directory, this.file)
     );
 
-    const accounts = await web3.eth.getAccounts();
+    const accounts = await web3.cfx.getAccounts();
 
     const fn = Require.file({
       file: this.file,
@@ -214,7 +214,7 @@ class Migration {
 
     // Get file path and emit pre-migration event
     const file = path.relative(options.migrations_directory, this.file);
-    const block = await web3.eth.getBlock("latest");
+    const block = await web3.cfx.getBlock("latest_state");
 
     const preMigrationsData = {
       file: file,

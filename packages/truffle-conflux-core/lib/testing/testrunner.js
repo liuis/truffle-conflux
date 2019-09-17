@@ -165,7 +165,7 @@ TestRunner.prototype.endTest = function(mocha, callback) {
 
   // There's no API for eth_getLogs?
   this.rpc(
-    "eth_getLogs",
+    "cfx_getLogs",
     [
       {
         fromBlock: "0x" + this.currentTestStartBlock.toString(16)

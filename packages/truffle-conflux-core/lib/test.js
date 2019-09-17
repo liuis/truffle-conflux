@@ -141,7 +141,7 @@ const Test = {
   },
 
   getAccounts: function(web3) {
-    return web3.eth.getAccounts();
+    return web3.cfx.getAccounts();
   },
 
   compileContractsWithTestFilesIfNeeded: async function(

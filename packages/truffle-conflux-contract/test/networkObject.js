@@ -22,7 +22,7 @@ describe("Network Object [ @geth ]", function() {
     var NewExample = await util.createExample();
 
     const result = await util.setUpProvider(NewExample);
-    network_id = await result.web3.eth.net.getId();
+    network_id = await result.web3.cfx.net.getId();
 
     assert.equal(NewExample.network_id, null);
 

@@ -38,7 +38,7 @@ describe("Quorum getBlock Overload", function() {
       let preparedGanache;
       try {
         preparedGanache = await prepareGanache(true);
-        const block = await preparedGanache.web3Shim.eth.getBlock(0);
+        const block = await preparedGanache.web3Shim.cfx.getBlock(0);
         const expectedBlockTime = new BN(genesisBlockTime.getTime()).divn(1000);
         assert.strictEqual(
           block.timestamp,
@@ -58,7 +58,7 @@ describe("Quorum getBlock Overload", function() {
       let preparedGanache;
       try {
         preparedGanache = await prepareGanache(false);
-        const block = await preparedGanache.web3Shim.eth.getBlock(0);
+        const block = await preparedGanache.web3Shim.cfx.getBlock(0);
         const expectedBlockTime = new BN(genesisBlockTime.getTime()).divn(1000);
         assert.strictEqual(block.timestamp, expectedBlockTime.toNumber());
         preparedGanache.server.close(resolve);

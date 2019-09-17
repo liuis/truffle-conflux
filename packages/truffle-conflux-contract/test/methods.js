@@ -61,7 +61,7 @@ describe("Methods", function() {
       const expectedInitialValue = 5;
 
       const example = await Example.new(expectedInitialValue);
-      const initialBlock = await web3.eth.getBlockNumber();
+      const initialBlock = await web3.cfx.getBlockNumber();
       const tx = await example.setValue(10);
 
       const nextBlock = tx.receipt.blockNumber;
@@ -521,15 +521,15 @@ describe("Methods", function() {
       let value;
 
       // Create and fund wallet account
-      const wallet = web3.eth.accounts.wallet.create(1);
-      const providerAccounts = await web3.eth.getAccounts();
-      await web3.eth.sendTransaction({
+      const wallet = web3.cfx.accounts.wallet.create(1);
+      const providerAccounts = await web3.cfx.getAccounts();
+      await web3.cfx.sendTransaction({
         from: providerAccounts[0],
         to: wallet["0"].address,
         value: web3.utils.toWei("1", "ether")
       });
 
-      const balance = await web3.eth.getBalance(wallet["0"].address);
+      const balance = await web3.cfx.getBalance(wallet["0"].address);
       assert.equal(balance, web3.utils.toWei("1", "ether"));
 
       Example.setWallet(wallet);
@@ -559,7 +559,7 @@ describe("Methods", function() {
         value: web3.utils.toWei("1", "ether")
       });
 
-      const balance = await web3.eth.getBalance(example.address);
+      const balance = await web3.cfx.getBalance(example.address);
       assert(
         balance === web3.utils.toWei("1", "ether"),
         "Balance should be 1 ether"
@@ -577,7 +577,7 @@ describe("Methods", function() {
 
       await example.send(web3.utils.toWei("1", "ether"));
 
-      const balance = await web3.eth.getBalance(example.address);
+      const balance = await web3.cfx.getBalance(example.address);
       assert(balance === web3.utils.toWei("1", "ether"));
     });
 
@@ -585,12 +585,12 @@ describe("Methods", function() {
       const example = await Example.new(1);
       const eth = web3.utils.toWei("1", "ether");
       const sender = accounts[1];
-      const initialSenderBalance = await web3.eth.getBalance(sender);
+      const initialSenderBalance = await web3.cfx.getBalance(sender);
 
       await example.send(eth, { from: sender });
 
-      const finalSenderBalance = await web3.eth.getBalance(sender);
-      const contractBalance = await web3.eth.getBalance(example.address);
+      const finalSenderBalance = await web3.cfx.getBalance(sender);
+      const contractBalance = await web3.cfx.getBalance(example.address);
 
       assert(contractBalance === eth, "Contract should receive eth");
 

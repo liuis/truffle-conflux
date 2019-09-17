@@ -45,7 +45,7 @@ describe("HD Wallet Provider", function() {
     assert.deepEqual(provider.getAddresses(), truffleDevAccounts);
     web3.setProvider(provider);
 
-    web3.eth.getBlockNumber((err, number) => {
+    web3.cfx.getBlockNumber((err, number) => {
       assert(number === 0);
       done();
     });
@@ -78,7 +78,7 @@ describe("HD Wallet Provider", function() {
       assert(EthUtil.isValidAddress(address), "invalid address");
     });
 
-    web3.eth.getBlockNumber((err, number) => {
+    web3.cfx.getBlockNumber((err, number) => {
       assert(number === 0);
       done();
     });
@@ -124,7 +124,7 @@ describe("HD Wallet Provider", function() {
       );
     });
 
-    web3.eth.getBlockNumber((err, number) => {
+    web3.cfx.getBlockNumber((err, number) => {
       assert(number === 0);
       done();
     });

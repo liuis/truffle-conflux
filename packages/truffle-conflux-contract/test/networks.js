@@ -94,9 +94,9 @@ describe("Different networks: ", function() {
     done();
   });
 
-  it("does not deploy to the same network (eth_getCode)", function(done) {
+  it("does not deploy to the same network (cfx_getCode)", function(done) {
     function getCode(firstContract, secondContract, callback) {
-      firstContract.web3.eth.getCode(secondContract.address, callback);
+      firstContract.web3.cfx.getCode(secondContract.address, callback);
     }
 
     getCode(ExampleOne, ExampleTwo, function(err, code) {

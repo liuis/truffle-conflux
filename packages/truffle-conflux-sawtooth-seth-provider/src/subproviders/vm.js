@@ -20,7 +20,7 @@ inherits(VmSubprovider, Subprovider);
 function VmSubprovider(opts) {
   const self = this;
   self.opts = opts || {};
-  self.methods = ["eth_call", "eth_estimateGas"];
+  self.methods = ["cfx_call", "cfx_estimateGas"];
   // set initialization blocker
   self._ready = new Stoplight();
   self._blockGasLimit = null;
@@ -44,7 +44,7 @@ VmSubprovider.prototype.handleRequest = function(payload, next, end) {
 
   const self = this;
   switch (payload.method) {
-    case "eth_call":
+    case "cfx_call":
       self.runVm(payload, function(err, results) {
         if (err) return end(err);
         var result = "0x";
@@ -55,7 +55,7 @@ VmSubprovider.prototype.handleRequest = function(payload, next, end) {
       });
       return;
 
-    case "eth_estimateGas":
+    case "cfx_estimateGas":
       self.estimateGas(payload, end);
       return;
   }

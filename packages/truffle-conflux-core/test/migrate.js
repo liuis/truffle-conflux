@@ -24,8 +24,8 @@ describe("migrate", function() {
   function createProviderAndSetNetworkConfig(network) {
     var provider = Ganache.provider({ seed: network, gasLimit: config.gas });
     var web3 = new Web3(provider);
-    return web3.eth.getAccounts().then(accs => {
-      return web3.eth.net.getId().then(network_id => {
+    return web3.cfx.getAccounts().then(accs => {
+      return web3.cfx.net.getId().then(network_id => {
         config.networks[network] = {
           provider: provider,
           network_id: network_id + "",

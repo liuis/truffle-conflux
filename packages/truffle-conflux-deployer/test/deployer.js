@@ -1,5 +1,5 @@
 const ganache = require("ganache-core");
-const Web3 = require("web3");
+const Web3 = require("conflux-web");
 const assert = require("assert");
 const Reporter = require("truffle-conflux-reporters").migrationsV5;
 const EventEmitter = require("events");
@@ -30,8 +30,8 @@ describe("Deployer (sync)", function() {
   const web3 = new Web3(provider);
 
   beforeEach(async function() {
-    networkId = await web3.eth.net.getId();
-    const accounts = await web3.eth.getAccounts();
+    networkId = await web3.cfx.net.getId();
+    const accounts = await web3.cfx.getAccounts();
 
     owner = accounts[0];
     await utils.compile();
@@ -225,7 +225,7 @@ describe("Deployer (sync)", function() {
 
   it("waits for confirmations", async function() {
     this.timeout(15000);
-    const startBlock = await web3.eth.getBlockNumber();
+    const startBlock = await web3.cfx.getBlockNumber();
 
     utils.startAutoMine(web3, 1500);
 
@@ -241,10 +241,10 @@ describe("Deployer (sync)", function() {
 
     utils.stopAutoMine();
 
-    const libReceipt = await web3.eth.getTransactionReceipt(
+    const libReceipt = await web3.cfx.getTransactionReceipt(
       IsLibrary.transactionHash
     );
-    const exampleReceipt = await web3.eth.getTransactionReceipt(
+    const exampleReceipt = await web3.cfx.getTransactionReceipt(
       Example.transactionHash
     );
 

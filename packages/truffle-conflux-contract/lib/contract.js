@@ -17,14 +17,14 @@ if (typeof Web3 === "object" && Object.keys(Web3).length === 0) {
 }
 
 (function(module) {
-  // Accepts a contract object created with web3.eth.Contract or an address.
+  // Accepts a contract object created with web3.cfx.Contract or an address.
   function Contract(contract) {
     var instance = this;
     var constructor = instance.constructor;
 
     // Disambiguate between .at() and .new()
     if (typeof contract === "string") {
-      //var web3Instance = new constructor.web3.eth.Contract(constructor.abi);
+      //var web3Instance = new constructor.web3.cfx.Contract(constructor.abi);
       var web3Instance = new constructor.web3.cfx.Contract(constructor.abi);
       web3Instance.options.address = contract;
       contract = web3Instance;

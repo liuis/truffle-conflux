@@ -181,10 +181,10 @@ describe("TruffleContract.setWallet()", () => {
   it("sets wallet on Web3Shim", () => {
     const freshTruffleContract = TruffleContract();
     const mockWalletObj = {};
-    assert(freshTruffleContract.web3.eth.accounts.wallet);
+    assert(freshTruffleContract.web3.cfx.accounts.wallet);
     freshTruffleContract.setWallet(mockWalletObj);
     assert.deepStrictEqual(
-      freshTruffleContract.web3.eth.accounts.wallet,
+      freshTruffleContract.web3.cfx.accounts.wallet,
       mockWalletObj
     );
   });

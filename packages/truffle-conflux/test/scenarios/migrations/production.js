@@ -4,7 +4,7 @@ const path = require("path");
 const assert = require("assert");
 const Reporter = require("../reporter");
 const sandbox = require("../sandbox");
-const Web3 = require("web3");
+const Web3 = require("conflux-web");
 
 const log = console.log;
 
@@ -39,7 +39,7 @@ describe("production", function() {
         { keepAlive: false }
       );
       web3 = new Web3(provider);
-      networkId = await web3.eth.net.getId();
+      networkId = await web3.cfx.net.getId();
     });
 
     it("auto dry-runs and honors confirmations option", function(done) {
@@ -101,7 +101,7 @@ describe("production", function() {
         { keepAlive: false }
       );
       web3 = new Web3(provider);
-      networkId = await web3.eth.net.getId();
+      networkId = await web3.cfx.net.getId();
     });
 
     it("migrates without dry-run", function(done) {

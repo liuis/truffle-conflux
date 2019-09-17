@@ -81,10 +81,10 @@ class Deployment {
 
     let secondsWaited = 0;
     let blocksWaited = 0;
-    let currentBlock = await web3.eth.getBlockNumber();
+    let currentBlock = await web3.cfx.getBlockNumber();
 
     self.blockPoll = setInterval(async () => {
-      const newBlock = await web3.eth.getBlockNumber();
+      const newBlock = await web3.cfx.getBlockNumber();
 
       blocksWaited = newBlock - currentBlock + blocksWaited;
       currentBlock = newBlock;
@@ -119,13 +119,13 @@ class Deployment {
    */
   async _waitBlocks(blocksToWait, state, web3) {
     const self = this;
-    let currentBlock = await web3.eth.getBlockNumber();
+    let currentBlock = await web3.cfx.getBlockNumber();
 
     return new Promise(accept => {
       let blocksHeard = 0;
 
       const poll = setInterval(async () => {
-        const newBlock = await web3.eth.getBlockNumber();
+        const newBlock = await web3.cfx.getBlockNumber();
 
         if (newBlock > currentBlock) {
           blocksHeard = newBlock - currentBlock + blocksHeard;
@@ -289,7 +289,7 @@ class Deployment {
 
       const isDeployed = contract.isDeployed();
       const newArgs = await Promise.all(args);
-      const currentBlock = await contract.web3.eth.getBlock("latest");
+      const currentBlock = await contract.web3.cfx.getBlock("latest_state");
 
       // Last arg can be an object that tells us not to overwrite.
       if (newArgs.length > 0) {

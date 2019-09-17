@@ -33,10 +33,10 @@ const Environment = {
       networkType: config.networks[config.network].type
     });
 
-    //const accounts = await web3.eth.getAccounts();
-    //const block = await web3.eth.getBlock("latest");
+    //const accounts = await web3.cfx.getAccounts();
+    //const block = await web3.cfx.getBlock("latest");
     const accounts = await web3.cfx.getAccounts();
-    const block = await web3.cfx.getBlock("latest");
+    const block = await web3.cfx.getBlock("latest_state");
 
     const upstreamNetwork = config.network;
     const upstreamConfig = config.networks[upstreamNetwork];
@@ -79,14 +79,14 @@ const helpers = {
   setFromOnConfig: async (config, web3) => {
     if (config.from) return;
 
-    //const accounts = await web3.eth.getAccounts();
+    //const accounts = await web3.cfx.getAccounts();
     const accounts = await web3.cfx.getAccounts();
     config.networks[config.network].from = accounts[0];
   },
 
   detectAndSetNetworkId: async (config, web3) => {
     const configNetworkId = config.networks[config.network].network_id;
-    //const providerNetworkId = await web3.eth.net.getId();
+    //const providerNetworkId = await web3.cfx.net.getId();
     const providerNetworkId = await web3.cfx.net.getId();
     if (configNetworkId !== "*") {
       // Ensure the network id matches the one in the config for safety

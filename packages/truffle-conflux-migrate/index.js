@@ -194,7 +194,7 @@ const Migrate = {
 
     const migrationsOnChain = async (migrationsAddress, callback) => {
       return (
-        (await Migrations.web3.eth.getCode(migrationsAddress, callback)) !==
+        (await Migrations.web3.cfx.getCode(migrationsAddress, callback)) !==
         "0x"
       );
     };

@@ -220,7 +220,7 @@ describe("Deployments", function() {
       let iterations = 1000; // # of times to set a uint in a loop, consuming gas.
 
       const estimate = await Example.new.estimateGas(iterations);
-      const block = await web3.eth.getBlock("latest_state");
+      const block = await web3.cfx.getBlock("latest_state");
       const multiplier = Example.gasMultiplier;
 
       assert(multiplier === 1.25, "Multiplier should be initialized to 1.25");
@@ -239,11 +239,11 @@ describe("Deployments", function() {
       this.timeout(50000);
 
       // Mock web3 non-response, fire error @ block 50, resolve receipt @ block 52.
-      const tempSendTransaction = Example.web3.eth.sendTransaction;
-      const tempGetTransactionReceipt = Example.web3.eth.getTransactionReceipt;
+      const tempSendTransaction = Example.web3.cfx.sendTransaction;
+      const tempGetTransactionReceipt = Example.web3.cfx.getTransactionReceipt;
 
-      Example.web3.eth.sendTransaction = util.fakeSendTransaction;
-      Example.web3.eth.getTransactionReceipt = util.fakeNoReceipt;
+      Example.web3.cfx.sendTransaction = util.fakeSendTransaction;
+      Example.web3.cfx.getTransactionReceipt = util.fakeNoReceipt;
       Example.timeoutBlocks = 52;
 
       const example = await Example.new(1).on(
@@ -255,14 +255,14 @@ describe("Deployments", function() {
           await util.fakeReject();
           await util.evm_mine();
           await util.evm_mine();
-          Example.web3.eth.getTransactionReceipt = util.fakeGotReceipt;
+          Example.web3.cfx.getTransactionReceipt = util.fakeGotReceipt;
           await util.evm_mine();
         }
       );
 
       // Restore web3
-      Example.web3.eth.sendTransaction = tempSendTransaction;
-      Example.web3.eth.getTransactionReceipt = tempGetTransactionReceipt;
+      Example.web3.cfx.sendTransaction = tempSendTransaction;
+      Example.web3.cfx.getTransactionReceipt = tempGetTransactionReceipt;
 
       await example.setValue(77);
       const newValue = await example.value();

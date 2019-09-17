@@ -5,7 +5,7 @@ const assert = require("assert");
 const Server = require("../server");
 const Reporter = require("../reporter");
 const sandbox = require("../sandbox");
-const Web3 = require("web3");
+const Web3 = require("conflux-web");
 
 const log = console.log;
 
@@ -39,7 +39,7 @@ describe("migrate (success)", function() {
       keepAlive: false
     });
     web3 = new Web3(provider);
-    networkId = await web3.eth.net.getId();
+    networkId = await web3.cfx.net.getId();
   });
 
   it("runs migrations (sync & async/await)", function(done) {

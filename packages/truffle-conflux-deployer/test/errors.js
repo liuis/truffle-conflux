@@ -1,5 +1,5 @@
 const ganache = require("ganache-core");
-const Web3 = require("web3");
+const Web3 = require("conflux-web");
 const assert = require("assert");
 const Reporter = require("truffle-conflux-reporters").migrationsV5;
 const EventEmitter = require("events");
@@ -30,8 +30,8 @@ describe("Error cases", function() {
   const web3 = new Web3(provider);
 
   beforeEach(async function() {
-    networkId = await web3.eth.net.getId();
-    accounts = await web3.eth.getAccounts();
+    networkId = await web3.cfx.net.getId();
+    accounts = await web3.cfx.getAccounts();
 
     owner = accounts[0];
     await utils.compile();
@@ -253,7 +253,7 @@ describe("Error cases", function() {
   });
 
   it("exceeds block limit", async function() {
-    const block = await web3.eth.getBlock("latest");
+    const block = await web3.cfx.getBlock("latest");
     const gas = block.gasLimit + 1000;
 
     migrate = function() {
@@ -275,15 +275,15 @@ describe("Error cases", function() {
 
   it("insufficient funds", async function() {
     const emptyAccount = accounts[7];
-    let balance = await web3.eth.getBalance(emptyAccount);
-    await web3.eth.sendTransaction({
+    let balance = await web3.cfx.getBalance(emptyAccount);
+    await web3.cfx.sendTransaction({
       to: accounts[0],
       from: emptyAccount,
       value: balance,
       gasPrice: 0
     });
 
-    balance = await web3.eth.getBalance(emptyAccount);
+    balance = await web3.cfx.getBalance(emptyAccount);
     assert(parseInt(balance) === 0);
 
     migrate = function() {

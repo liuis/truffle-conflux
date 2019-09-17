@@ -1,7 +1,7 @@
 var debug = require("debug")("test:util"); // eslint-disable-line no-unused-vars
 var fs = require("fs");
 var ganache = require("ganache-core");
-var Web3 = require("web3");
+var Web3 = require("conflux-web");
 var Web3PromiEvent = require("web3-core-promievent");
 var Compile = require("truffle-conflux-compile/legacy");
 var contract = require("../");
@@ -88,7 +88,7 @@ var util = {
     instance.setProvider(provider);
     util.web3 = web3;
 
-    const accs = await web3.eth.getAccounts();
+    const accs = await web3.cfx.getAccounts();
 
     instance.defaults({
       from: accs[0]
@@ -119,7 +119,7 @@ var util = {
   // Mocks for delayed tx resolution to simulate real clients
   fakeSendTransaction: function(params) {
     util.fakePromiEvent = new Web3PromiEvent();
-    var real = util.web3.eth.sendTransaction(params);
+    var real = util.web3.cfx.sendTransaction(params);
 
     real.on("transactionHash", hash => {
       util.realHash = hash;

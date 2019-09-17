@@ -1,5 +1,5 @@
 const ganache = require("ganache-core");
-const Web3 = require("web3");
+const Web3 = require("conflux-web");
 const assert = require("assert");
 
 const Deployer = require("../index");
@@ -14,8 +14,8 @@ describe("Deployer (async / await)", function() {
 
   beforeEach(async function() {
     this.timeout(20000);
-    networkId = await web3.eth.net.getId();
-    const accounts = await web3.eth.getAccounts();
+    networkId = await web3.cfx.net.getId();
+    const accounts = await web3.cfx.getAccounts();
 
     owner = accounts[0];
     options = {
