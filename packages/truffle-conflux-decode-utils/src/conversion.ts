@@ -1,6 +1,7 @@
 import BN from "bn.js";
 //import Web3 from "web3";
-const Web3 = require("conflux-web");
+//const Web3 = require("conflux-web");
+import Cfx from "conflux-web"
 import { Constants } from "./constants";
 
 export namespace Conversion {
@@ -88,7 +89,7 @@ export namespace Conversion {
       {
         hex = "0x" + hex.slice(hex.length - 2 * Constants.ADDRESS_SIZE);
       }
-      return Web3.utils.toChecksumAddress(hex);
+      return Cfx.utils.toChecksumAddress(hex);
     }
     //otherwise, we're in the Uint8Array case, which we can't fully handle ourself
 
@@ -100,7 +101,7 @@ export namespace Conversion {
     //now, convert to hex string and apply checksum case that second argument
     //(which ensures it's padded to 20 bytes) shouldn't actually ever be
     //needed, but I'll be safe and include it
-    return Web3.utils.toChecksumAddress(toHexString(bytes, Constants.ADDRESS_SIZE));
+    return Cfx.utils.toChecksumAddress(toHexString(bytes, Constants.ADDRESS_SIZE));
   }
 
   export function toBytes(data: BN | string, length: number = 0): Uint8Array {

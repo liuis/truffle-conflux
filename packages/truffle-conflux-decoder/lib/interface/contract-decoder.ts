@@ -3,7 +3,7 @@ const debug = debugModule("decoder:interface:contract-decoder");
 
 import * as DecodeUtils from "../../../truffle-conflux-decode-utils";
 import AsyncEventEmitter from "async-eventemitter";
-import Web3 from "conflux-web";
+import Cfx from "conflux-web";
 import { ContractObject } from "../../../truffle-conflux-contract-schema/spec";
 import BN from "bn.js";
 import { EvmInfo } from "../types/evm";
@@ -105,7 +105,7 @@ function getContractNode(contract: ContractObject): AstDefinition {
 }
 
 export default class TruffleContractDecoder extends AsyncEventEmitter {
-  private web3: Web3;
+  private web3: Cfx;
 
   private contract: ContractObject;
   private contractNode: AstDefinition;
@@ -137,7 +137,7 @@ export default class TruffleContractDecoder extends AsyncEventEmitter {
   constructor(contract: ContractObject, relevantContracts: ContractObject[], provider: Provider, address: string) {
     super();
 
-    this.web3 = new Web3(provider);
+    this.web3 = new Cfx(provider);
 
     this.contract = contract;
     this.relevantContracts = relevantContracts;
@@ -231,7 +231,9 @@ export default class TruffleContractDecoder extends AsyncEventEmitter {
     let result: IteratorResult<any> = decoder.next();
     while(!result.done) {
       let request = <DecoderRequest>(result.value);
-      let response: Uint8Array;
+      //TODO  此处我先让它pass ·
+      //let response: Uint8Array;
+      let response: any;
       if(isStorageRequest(request)) {
         response = await this.getStorage(this.contractAddress, request.slot, block);
       }
@@ -528,7 +530,7 @@ export default class TruffleContractDecoder extends AsyncEventEmitter {
             index = rawIndex;
             break;
           case "address":
-            index = Web3.utils.toChecksumAddress(rawIndex);
+            index = Cfx.utils.toChecksumAddress(rawIndex);
             break;
           case "int":
           case "uint":
