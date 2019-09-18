@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/liuis/truffle-conflux/issues"
   },
-  "version": "5.0.30",
+  "version": "10.0.0",
   "main": "./build/library.bundled.js",
   "bin": {
     "truffle-conflux": "./build/cli.bundled.js"
@@ -32,7 +32,8 @@
   },
   "devDependencies": {
     "clean-webpack-plugin": "^0.1.16",
-    "copy-webpack-plugin": "^4.0.1",
+    "conflux-web": "1.2.2-alpha.0",
+    "copy-webpack-plugin": "^4.6.0",
     "eslint": "^5.7.0",
     "fs-extra": "6.0.1",
     "ganache-core": "2.5.7",
@@ -48,14 +49,14 @@
     "shebang-loader": "0.0.1",
     "stream-buffers": "^3.0.1",
     "tmp": "0.0.33",
-    "truffle-conflux-box": "../truffle-conflux-box",
-    "truffle-conflux-contract": "../truffle-conflux-contract",
-    "truffle-conflux-core": "../truffle-conflux-core",
-    "truffle-conflux-debugger": "../truffle-conflux-debugger",
-    "web3": "^1.2.0",
+    "truffle-conflux-box": "file:../truffle-conflux-box",
+    "truffle-conflux-contract": "file:../truffle-conflux-contract",
+    "truffle-conflux-core": "file:../truffle-conflux-core",
+    "truffle-conflux-debugger": "file:../truffle-conflux-debugger",
     "conflux-web": "1.2.2-alpha.0",
-    "webpack": "^2.5.1",
+    "webpack": "^2.7.0",
     "webpack-bundle-analyzer": "^3.0.3",
+    "webpack-cli": "^3.3.9",
     "yargs": "^8.0.2"
   },
   "publishConfig": {
