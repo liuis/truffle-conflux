@@ -23,7 +23,6 @@
     "truffle-conflux-interface-adapter": "file:../truffle-conflux-interface-adapter",
     "truffle-conflux-reporters": "file:../truffle-conflux-reporters",
     "truffle-conflux-require": "file:../truffle-conflux-require",
-    "web3": "^1.2.0",
     "conflux-web": "1.2.2-alpha.0"
   },
   "devDependencies": {

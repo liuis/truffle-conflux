@@ -64,7 +64,6 @@
     "truffle-conflux-solidity-utils": "../truffle-conflux-solidity-utils",
     "truffle-conflux-workflow-compile": "../truffle-conflux-workflow-compile",
     "universal-analytics": "^0.4.17",
-    "web3": "^1.2.0",
     "conflux-web": "1.2.2-alpha.0",
     "xregexp": "^4.2.4",
     "yargs": "^8.0.2"

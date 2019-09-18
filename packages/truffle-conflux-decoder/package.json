@@ -30,7 +30,6 @@
     "lodash.merge": "^4.6.1",
     "truffle-conflux-decode-utils": "file:../truffle-conflux-decode-utils",
     "utf8": "^3.0.0",
-    "web3": "^1.2.0",
     "conflux-web": "1.2.2-alpha.0"
   },
   "peerDependencies": {
@@ -44,7 +43,7 @@
     "@types/lodash.isequal": "^4.5.4",
     "@types/lodash.merge": "^4.6.4",
     "@types/utf8": "^2.1.6",
-    "@types/web3": "^1.0.5",
+    "@types/conflux-web": "git+ssh://git@github.com:liuis/conflux-web.git",
     "json-schema-to-typescript": "^5.5.0",
     "truffle-conflux-contract-schema": "file:../truffle-conflux-contract-schema",
     "typescript": "^3.1.3"

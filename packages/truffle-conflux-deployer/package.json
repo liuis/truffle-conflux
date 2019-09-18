@@ -23,7 +23,6 @@
     "mocha": "5.2.0",
     "truffle-conflux-reporters": "file:../truffle-conflux-reporters",
     "truffle-conflux-workflow-compile": "file:../truffle-conflux-workflow-compile",
-    "web3": "^1.2.0",
     "conflux-web": "1.2.2-alpha.0"
   },
   "keywords": [

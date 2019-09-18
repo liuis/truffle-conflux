@@ -1,5 +1,5 @@
 const debug = require("debug")("contract:execute"); // eslint-disable-line no-unused-vars
-var Web3PromiEvent = require("web3-core-promievent");
+var Web3PromiEvent = require("conflux-web-core-promievent");
 var EventEmitter = require("events");
 var utils = require("./utils");
 var StatusError = require("./statuserror");
