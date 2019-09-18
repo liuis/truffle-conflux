@@ -8,7 +8,7 @@
   "bugs": {
     "url": "https://github.com/trufflesuite/truffle/issues"
   },
-  "version": "0.0.1",
+  "version": "0.0.2-alpha.0",
   "main": "index.js",
   "scripts": {
     "compile": "mkdir -p dist && browserify ./index.js -o ./dist/truffle-conflux-contract.js && uglifyjs ./dist/truffle-conflux-contract.js -o ./dist/truffle-conflux-contract.min.js",
@@ -20,15 +20,15 @@
   },
   "dependencies": {
     "bignumber.js": "^7.2.1",
+    "conflux-web": "1.2.2-alpha.0",
+    "conflux-web-cfx-abi": "1.2.2-alpha.0",
+    "conflux-web-core-promievent": "1.2.2-alpha.0",
+    "conflux-web-utils": "1.2.2-alpha.0",
     "ethers": "^4.0.0-beta.1",
     "truffle-conflux-blockchain-utils": "file:../truffle-conflux-blockchain-utils",
     "truffle-conflux-contract-schema": "file:../truffle-conflux-contract-schema",
     "truffle-conflux-error": "file:../truffle-conflux-error",
-    "truffle-conflux-interface-adapter": "file:../truffle-conflux-interface-adapter",
-    "conflux-web": "1.2.2-alpha.0",
-    "conflux-web-core-promievent": "1.2.2-alpha.0",
-    "conflux-web-cfx-abi": "1.2.2-alpha.0",
-    "conflux-web-utils": "1.2.2-alpha.0"
+    "truffle-conflux-interface-adapter": "file:../truffle-conflux-interface-adapter"
   },
   "devDependencies": {
     "async": "2.6.1",

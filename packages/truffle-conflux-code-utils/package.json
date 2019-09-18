@@ -1,6 +1,6 @@
 {
   "name": "truffle-conflux-code-utils",
-  "version": "0.0.1",
+  "version": "0.0.2-alpha.0",
   "description": "Utilities for parsing and managing EVM-compatible bytecode",
   "main": "index.js",
   "scripts": {

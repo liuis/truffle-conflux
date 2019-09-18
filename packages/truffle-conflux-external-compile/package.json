@@ -1,6 +1,6 @@
 {
   "name": "truffle-conflux-external-compile",
-  "version": "0.0.1",
+  "version": "0.0.2-alpha.0",
   "description": "Wrapper to compile Truffle contracts with arbitrary shell command",
   "keywords": [
     "truffle",
@@ -19,11 +19,11 @@
     "url": "https://github.com/trufflesuite/truffle/issues"
   },
   "dependencies": {
+    "conflux-web-utils": "1.2.2-alpha.0",
     "debug": "^4.1.0",
     "glob": "^7.1.2",
     "truffle-conflux-contract-schema": "../truffle-conflux-contract-schema",
-    "truffle-conflux-expect": "../truffle-conflux-expect",
-    "conflux-web-utils": "1.2.2-alpha.0"
+    "truffle-conflux-expect": "../truffle-conflux-expect"
   },
   "devDependencies": {
     "chai": "4.2.0",

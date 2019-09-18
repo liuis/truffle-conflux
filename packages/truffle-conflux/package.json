@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/liuis/truffle-conflux/issues"
   },
-  "version": "0.0.1",
+  "version": "0.0.2-alpha.0",
   "main": "./build/library.bundled.js",
   "bin": {
     "truffle-conflux": "./build/cli.bundled.js"
@@ -53,7 +53,6 @@
     "truffle-conflux-contract": "file:../truffle-conflux-contract",
     "truffle-conflux-core": "file:../truffle-conflux-core",
     "truffle-conflux-debugger": "file:../truffle-conflux-debugger",
-    "conflux-web": "1.2.2-alpha.0",
     "webpack": "^2.7.0",
     "webpack-bundle-analyzer": "^3.0.3",
     "webpack-cli": "^3.3.9",

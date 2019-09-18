@@ -9,17 +9,17 @@
   "bugs": {
     "url": "https://github.com/trufflesuite/truffle/issues"
   },
-  "version": "0.0.1",
+  "version": "0.0.2-alpha.0",
   "main": "index.js",
   "dependencies": {
+    "conflux-web": "1.2.2-alpha.0",
     "ganache-core": "2.5.7",
     "node-ipc": "^9.1.1",
     "truffle-conflux-artifactor": "file:../truffle-conflux-artifactor",
     "truffle-conflux-error": "file:../truffle-conflux-error",
     "truffle-conflux-expect": "file:../truffle-conflux-expect",
     "truffle-conflux-interface-adapter": "file:../truffle-conflux-interface-adapter",
-    "truffle-conflux-resolver": "file:../truffle-conflux-resolver",
-    "conflux-web": "1.2.2-alpha.0"
+    "truffle-conflux-resolver": "file:../truffle-conflux-resolver"
   },
   "devDependencies": {
     "debug": "^4.1.0"

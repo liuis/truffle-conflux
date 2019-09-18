@@ -8,7 +8,7 @@
   "bugs": {
     "url": "https://github.com/trufflesuite/truffle-conflux-deployer/issues"
   },
-  "version": "0.0.1",
+  "version": "0.0.2-alpha.0",
   "main": "index.js",
   "scripts": {
     "test": "mocha --no-warnings --timeout 10000 --exit"
@@ -19,11 +19,11 @@
     "truffle-conflux-expect": "file:../truffle-conflux-expect"
   },
   "devDependencies": {
+    "conflux-web": "1.2.2-alpha.0",
     "ganache-core": "2.5.7",
     "mocha": "5.2.0",
     "truffle-conflux-reporters": "file:../truffle-conflux-reporters",
-    "truffle-conflux-workflow-compile": "file:../truffle-conflux-workflow-compile",
-    "conflux-web": "1.2.2-alpha.0"
+    "truffle-conflux-workflow-compile": "file:../truffle-conflux-workflow-compile"
   },
   "keywords": [
     "contracts",

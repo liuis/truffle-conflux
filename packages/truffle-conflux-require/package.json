@@ -8,17 +8,17 @@
   "bugs": {
     "url": "https://github.com/liuis/truffle-exec/issues"
   },
-  "version": "0.0.1",
+  "version": "0.0.2-alpha.0",
   "main": "require.js",
   "scripts": {
     "test": "mocha"
   },
   "dependencies": {
+    "conflux-web": "1.2.2-alpha.0",
     "original-require": "1.0.1",
     "truffle-conflux-config": "../truffle-conflux-config",
     "truffle-conflux-expect": "../truffle-conflux-expect",
-    "truffle-conflux-interface-adapter": "../truffle-conflux-interface-adapter",
-    "conflux-web": "1.2.2-alpha.0"
+    "truffle-conflux-interface-adapter": "../truffle-conflux-interface-adapter"
   },
   "devDependencies": {
     "mocha": "5.2.0"

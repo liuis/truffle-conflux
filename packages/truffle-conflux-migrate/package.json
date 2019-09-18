@@ -8,13 +8,14 @@
   "bugs": {
     "url": "https://github.com/trufflesuite/truffle-conflux-migrate/issues"
   },
-  "version": "0.0.1",
+  "version": "0.0.2-alpha.0",
   "main": "index.js",
   "scripts": {
     "test": "mocha ./test/* ./test/**/*"
   },
   "dependencies": {
     "async": "2.6.1",
+    "conflux-web": "1.2.2-alpha.0",
     "emittery": "^0.4.0",
     "node-dir": "0.1.17",
     "truffle-conflux-config": "file:../truffle-conflux-config",
@@ -22,8 +23,7 @@
     "truffle-conflux-expect": "file:../truffle-conflux-expect",
     "truffle-conflux-interface-adapter": "file:../truffle-conflux-interface-adapter",
     "truffle-conflux-reporters": "file:../truffle-conflux-reporters",
-    "truffle-conflux-require": "file:../truffle-conflux-require",
-    "conflux-web": "1.2.2-alpha.0"
+    "truffle-conflux-require": "file:../truffle-conflux-require"
   },
   "devDependencies": {
     "mocha": "5.2.0",

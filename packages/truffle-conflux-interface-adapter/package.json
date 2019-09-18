@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/liuis/truffle-conflux/issues"
   },
-  "version": "0.0.1",
+  "version": "0.0.2-alpha.0",
   "main": "dist/index.js",
   "directories": {
     "lib": "lib"
@@ -19,16 +19,16 @@
   },
   "dependencies": {
     "bn.js": "^4.11.8",
+    "conflux-web": "1.2.2-alpha.0",
     "ethers": "^4.0.32",
     "lodash": "^4.17.13",
-    "conflux-web": "1.2.2-alpha.0",
-    "typescript-logging":"*"
+    "typescript-logging": "*"
   },
   "devDependencies": {
     "@types/bn.js": "^4.11.4",
+    "@types/conflux-web": "git+ssh://git@github.com:liuis/conflux-web.git",
     "@types/lodash": "^4.14.136",
     "@types/mocha": "^5.2.6",
-    "@types/conflux-web": "git+ssh://git@github.com:liuis/conflux-web.git",
     "ganache-core": "2.5.7",
     "mocha": "^6.0.2",
     "ts-node": "^8.0.3",

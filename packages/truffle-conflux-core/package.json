@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/ConsenSys/truffle/issues"
   },
-  "version": "0.0.1",
+  "version": "0.0.2-alpha.0",
   "bin": {
     "truffle": "./cli.js",
     "truffle-exec": "./exec.js"
@@ -23,6 +23,7 @@
     "colors": "^1.1.2",
     "command-exists": "^1.2.8",
     "configstore": "^4.0.0",
+    "conflux-web": "1.2.2-alpha.0",
     "cpr": "^3.0.1",
     "debug": "^4.1.0",
     "del": "^2.2.0",
@@ -54,7 +55,6 @@
     "truffle-conflux-deployer": "../truffle-conflux-deployer",
     "truffle-conflux-error": "../truffle-conflux-error",
     "truffle-conflux-expect": "../truffle-conflux-expect",
-    "truffle-init": "^1.0.7",
     "truffle-conflux-interface-adapter": "../truffle-conflux-interface-adapter",
     "truffle-conflux-migrate": "../truffle-conflux-migrate",
     "truffle-conflux-provider": "../truffle-conflux-provider",
@@ -63,8 +63,8 @@
     "truffle-conflux-resolver": "../truffle-conflux-resolver",
     "truffle-conflux-solidity-utils": "../truffle-conflux-solidity-utils",
     "truffle-conflux-workflow-compile": "../truffle-conflux-workflow-compile",
+    "truffle-init": "^1.0.7",
     "universal-analytics": "^0.4.17",
-    "conflux-web": "1.2.2-alpha.0",
     "xregexp": "^4.2.4",
     "yargs": "^8.0.2"
   },

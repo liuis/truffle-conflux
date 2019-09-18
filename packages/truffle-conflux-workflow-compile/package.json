@@ -1,6 +1,6 @@
 {
   "name": "truffle-conflux-workflow-compile",
-  "version": "0.0.1",
+  "version": "0.0.2-alpha.0",
   "description": "Core workflow behavior for `truffle compile` command",
   "dependencies": {
     "fs-extra": "^7.0.1",
