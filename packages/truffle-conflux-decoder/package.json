@@ -8,7 +8,7 @@
   "bugs": {
     "url": "https://github.com/trufflesuite/truffle/issues"
   },
-  "version": "3.0.7",
+  "version": "0.0.1",
   "main": "dist/interface/index.js",
   "directories": {
     "lib": "lib"

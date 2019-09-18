@@ -5,7 +5,7 @@
   "license": "MIT",
   "author": "Tim Coulter",
   "repository": "https://github.com/trufflesuite/truffle/tree/master/packages/truffle-conflux-artifactor",
-  "version": "4.0.26",
+  "version": "0.0.1",
   "main": "./index.js",
   "scripts": {
     "test": "mocha"

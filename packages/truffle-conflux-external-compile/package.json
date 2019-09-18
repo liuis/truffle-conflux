@@ -1,6 +1,6 @@
 {
   "name": "truffle-conflux-external-compile",
-  "version": "1.0.12",
+  "version": "0.0.1",
   "description": "Wrapper to compile Truffle contracts with arbitrary shell command",
   "keywords": [
     "truffle",

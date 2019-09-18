@@ -1,6 +1,6 @@
 {
   "name": "truffle-conflux-legacy-system",
-  "version": "1.0.7",
+  "version": "0.0.1",
   "description": "Legacy on-chain migrations & testing management library",
   "main": "index.js",
   "directories": {

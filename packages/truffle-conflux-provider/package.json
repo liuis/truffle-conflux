@@ -8,7 +8,7 @@
   "bugs": {
     "url": "https://github.com/liuis/truffle-conflux-provider/issues"
   },
-  "version": "0.1.13",
+  "version": "0.0.1",
   "main": "index.js",
   "scripts": {
     "test": "mocha"

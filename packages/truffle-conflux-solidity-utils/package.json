@@ -1,6 +1,6 @@
 {
   "name": "truffle-conflux-solidity-utils",
-  "version": "1.2.3",
+  "version": "0.0.1",
   "description": "Utilities for Solidity contracts",
   "main": "index.js",
   "scripts": {},

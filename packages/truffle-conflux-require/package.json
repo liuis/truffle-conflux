@@ -8,7 +8,7 @@
   "bugs": {
     "url": "https://github.com/liuis/truffle-exec/issues"
   },
-  "version": "2.0.17",
+  "version": "0.0.1",
   "main": "require.js",
   "scripts": {
     "test": "mocha"

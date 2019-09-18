@@ -1,6 +1,6 @@
 {
   "name": "truffle-conflux-box",
-  "version": "1.0.33",
+  "version": "0.0.1",
   "description": "Truffle project boilerplate utility",
   "main": "box.js",
   "scripts": {

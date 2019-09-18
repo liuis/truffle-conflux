@@ -8,7 +8,7 @@
   "bugs": {
     "url": "https://github.com/trufflesuite/truffle-conflux-migrate/issues"
   },
-  "version": "3.0.28",
+  "version": "0.0.1",
   "main": "index.js",
   "scripts": {
     "test": "mocha ./test/* ./test/**/*"

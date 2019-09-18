@@ -1,6 +1,6 @@
 {
   "name": "truffle-conflux-debug-utils",
-  "version": "1.0.18",
+  "version": "0.0.1",
   "description": "Integration utils for truffle/truffle-conflux-debugger",
   "dependencies": {
     "async": "2.6.1",
