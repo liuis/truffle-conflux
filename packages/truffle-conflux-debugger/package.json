@@ -31,11 +31,11 @@
     "redux-saga": "1.0.0",
     "remote-redux-devtools": "^0.5.12",
     "reselect-tree": "^1.3.1",
-    "truffle-conflux-code-utils": "../truffle-conflux-code-utils",
-    "truffle-conflux-decode-utils": "../truffle-conflux-decode-utils",
-    "truffle-conflux-decoder": "../truffle-conflux-decoder",
-    "truffle-conflux-expect": "../truffle-conflux-expect",
-    "truffle-conflux-solidity-utils": "../truffle-conflux-solidity-utils"
+    "truffle-conflux-code-utils": "0.0.2-alpha.0",
+    "truffle-conflux-decode-utils": "0.0.2-alpha.0",
+    "truffle-conflux-decoder": "0.0.2-alpha.0",
+    "truffle-conflux-expect": "0.0.2-alpha.0",
+    "truffle-conflux-solidity-utils": "0.0.2-alpha.0"
   },
   "devDependencies": {
     "async": "2.6.1",
@@ -61,8 +61,8 @@
     "nyc": "^13.0.1",
     "remotedev-server": "^0.3.1",
     "truffle-conflux-artifactor": "../truffle-conflux-artifactor",
-    "truffle-conflux-box": "../truffle-conflux-box",
-    "truffle-conflux-debug-utils": "../truffle-conflux-debug-utils",
+    "truffle-conflux-box": "0.0.2-alpha.0",
+    "truffle-conflux-debug-utils": "0.0.2-alpha.0",
     "truffle-conflux-migrate": "../truffle-conflux-migrate",
     "truffle-conflux-resolver": "../truffle-conflux-resolver",
     "truffle-conflux-workflow-compile": "../truffle-conflux-workflow-compile",

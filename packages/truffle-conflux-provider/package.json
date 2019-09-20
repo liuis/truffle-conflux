@@ -15,8 +15,8 @@
   },
   "dependencies": {
     "conflux-web": "1.2.2-alpha.0",
-    "truffle-conflux-error": "file:../truffle-conflux-error",
-    "truffle-conflux-interface-adapter": "file:../truffle-conflux-interface-adapter"
+    "truffle-conflux-error": "0.0.2-alpha.0",
+    "truffle-conflux-interface-adapter": "0.0.2-alpha.0"
   },
   "devDependencies": {
     "ganache-core": "2.5.7",

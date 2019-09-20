@@ -18,12 +18,12 @@
     "conflux-web": "1.2.2-alpha.0",
     "emittery": "^0.4.0",
     "node-dir": "0.1.17",
-    "truffle-conflux-config": "file:../truffle-conflux-config",
+    "truffle-conflux-config": "0.0.2-alpha.0",
     "truffle-conflux-deployer": "file:../truffle-conflux-deployer",
-    "truffle-conflux-expect": "file:../truffle-conflux-expect",
-    "truffle-conflux-interface-adapter": "file:../truffle-conflux-interface-adapter",
-    "truffle-conflux-reporters": "file:../truffle-conflux-reporters",
-    "truffle-conflux-require": "file:../truffle-conflux-require"
+    "truffle-conflux-expect": "0.0.2-alpha.0",
+    "truffle-conflux-interface-adapter": "0.0.2-alpha.0",
+    "truffle-conflux-reporters": "0.0.2-alpha.0",
+    "truffle-conflux-require": "0.0.2-alpha.0"
   },
   "devDependencies": {
     "mocha": "5.2.0",
