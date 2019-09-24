@@ -16,13 +16,13 @@
   "dependencies": {
     "emittery": "^0.4.0",
     "truffle-conflux-contract": "file:../truffle-conflux-contract",
-    "truffle-conflux-expect": "file:../truffle-conflux-expect"
+    "truffle-conflux-expect": "0.0.2-alpha.0"
   },
   "devDependencies": {
     "conflux-web": "1.2.2-alpha.0",
     "ganache-core": "2.5.7",
     "mocha": "5.2.0",
-    "truffle-conflux-reporters": "file:../truffle-conflux-reporters",
+    "truffle-conflux-reporters": "0.0.2-alpha.0",
     "truffle-conflux-workflow-compile": "file:../truffle-conflux-workflow-compile"
   },
   "keywords": [

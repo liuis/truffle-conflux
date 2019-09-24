@@ -1,5 +1,5 @@
 const pkg = require("../package.json");
-const solcpkg = require("solc/package.json");
+//const solcpkg = require("solc/package.json");
 
 const info = () => {
   let bundleVersion;
@@ -11,7 +11,8 @@ const info = () => {
   return {
     core: pkg.version,
     bundle: bundleVersion,
-    solc: solcpkg.version
+    //solc: solcpkg.version
+    solc: "0.5.11"
   };
 };
 

@@ -8,8 +8,8 @@
     "truffle-conflux-artifactor": "file:../truffle-conflux-artifactor",
     "truffle-conflux-compile": "file:../truffle-conflux-compile",
     "truffle-conflux-compile-vyper": "file:../truffle-conflux-compile-vyper",
-    "truffle-conflux-config": "file:../truffle-conflux-config",
-    "truffle-conflux-expect": "file:../truffle-conflux-expect",
+    "truffle-conflux-config": "0.0.2-alpha.0",
+    "truffle-conflux-expect": "0.0.2-alpha.0",
     "truffle-conflux-external-compile": "file:../truffle-conflux-external-compile",
     "truffle-conflux-resolver": "file:../truffle-conflux-resolver"
   },

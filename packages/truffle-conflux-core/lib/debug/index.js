@@ -6,7 +6,7 @@ const util = require("util");
 const BN = require("bn.js");
 const ora = require("ora");
 
-const Debugger = require("truffle-conflux-debugger");
+const Debugger = require("../../../truffle-conflux-debugger");
 const DebugUtils = require("truffle-conflux-debug-utils");
 
 const { DebugInterpreter } = require("./interpreter");

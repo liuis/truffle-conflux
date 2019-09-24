@@ -5,7 +5,7 @@
  * - a string containing a repo under the `truffle-conflux-box` org
  */
 function normalizeURL(
-  url = "https://github.com/trufflesuite/truffle-init-default"
+  url = "https://github.com/trufflesuite/truffle-conflux-init-default"
 ) {
   // full URL already
   if (url.includes("://") || url.includes("git@")) {

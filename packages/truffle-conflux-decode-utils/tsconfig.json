@@ -10,9 +10,9 @@
     "baseUrl": ".",
     "lib": ["es2017"],
     "paths": {
-      "web3": [
-        "../../node_modules/@types/web3/index",
-        "node_modules/web3/index"
+      "conflux-web": [
+        "../../node_modules/@types/conflux-web/index",
+        "node_modules/conflux-web/index"
       ]
     },
     "rootDir": "src",

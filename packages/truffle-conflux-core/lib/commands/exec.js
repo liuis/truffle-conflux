@@ -40,7 +40,7 @@ const command = {
     const Contracts = require("truffle-conflux-workflow-compile");
     const ConfigurationError = require("../errors/configurationerror");
     const Require = require("truffle-conflux-require");
-    const { Environment } = require("truffle-conflux-environment");
+    const { Environment } = require("../../../truffle-conflux-environment");
     const path = require("path");
     const OS = require("os");
 

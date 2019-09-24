@@ -1,5 +1,5 @@
 // Using web3 for its sha function...
-var Web3 = require("web3");
+var Web3 = require("conflux-web");
 const semver = require("semver");
 const Native = require("truffle-conflux-compile/compilerSupplier/loadingStrategies/Native");
 

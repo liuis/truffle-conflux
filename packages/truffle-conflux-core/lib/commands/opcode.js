@@ -21,7 +21,7 @@ var command = {
     var Config = require("truffle-conflux-config");
     var TruffleError = require("truffle-conflux-error");
     var Contracts = require("truffle-conflux-workflow-compile");
-    var CodeUtils = require("truffle-conflux-code-utils");
+    var CodeUtils = require("../../../truffle-conflux-code-utils");
 
     if (options._.length === 0) {
       return done(new TruffleError("Please specify a contract name."));

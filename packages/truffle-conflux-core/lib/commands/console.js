@@ -21,7 +21,7 @@ const command = {
   run: function(options, done) {
     const Config = require("truffle-conflux-config");
     const Console = require("../console");
-    const { Environment } = require("truffle-conflux-environment");
+    const { Environment } = require("../../../truffle-conflux-environment");
 
     const config = Config.detect(options);
 

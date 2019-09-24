@@ -22,7 +22,7 @@ module.exports = {
   readBoxConfig: async destination => {
     const possibleConfigs = [
       path.join(destination, "truffle-conflux-box.json"),
-      path.join(destination, "truffle-init.json")
+      path.join(destination, "truffle-conflux-init.json")
     ];
 
     const configPath = possibleConfigs.reduce((path, alt) => {

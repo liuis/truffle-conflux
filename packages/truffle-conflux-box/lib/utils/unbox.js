@@ -53,7 +53,7 @@ function prepareToCopyFiles(tempDir, { ignore }) {
 
   // remove box config file
   needingRemoval.push("truffle-conflux-box.json");
-  needingRemoval.push("truffle-init.json");
+  needingRemoval.push("truffle-conflux-init.json");
 
   needingRemoval
     .map(fileName => path.join(tempDir, fileName))

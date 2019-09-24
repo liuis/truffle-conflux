@@ -51,7 +51,7 @@ const command = {
     const fs = require("fs");
     const { promisify } = require("util");
     const promisifiedCopy = promisify(require("../copy"));
-    const { Environment, Develop } = require("truffle-conflux-environment");
+    const { Environment, Develop } = require("../../../truffle-conflux-environment");
 
     const config = Config.detect(options);
 

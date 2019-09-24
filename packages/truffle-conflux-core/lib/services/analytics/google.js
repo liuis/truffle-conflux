@@ -10,7 +10,7 @@
 const Config = require("truffle-conflux-config");
 const userConfig = Config.getUserConfig();
 const ua = require("universal-analytics");
-const uuid = require("uuid/v4");
+const uuid = require("uuidv4");
 
 const inquirer = require("inquirer");
 

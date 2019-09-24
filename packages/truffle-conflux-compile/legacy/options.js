@@ -1,4 +1,4 @@
-const expect = require("../truffle-conflux-expect");
+const expect = require("truffle-conflux-expect");
 
 /**
  * Handle options compatibility

@@ -10,21 +10,21 @@ module.exports = {
   entry: {
     cli: path.join(
       __dirname,
-      "../..",
+      //"../..",
       "node_modules",
       "truffle-conflux-core",
       "cli.js"
     ),
     chain: path.join(
       __dirname,
-      "../..",
+      //"../..",
       "node_modules",
       "truffle-conflux-environment",
       "chain.js"
     ),
     analytics: path.join(
       __dirname,
-      "../..",
+      //"../..",
       "node_modules",
       "truffle-conflux-core",
       "lib",
@@ -34,7 +34,7 @@ module.exports = {
     ),
     library: path.join(
       __dirname,
-      "../..",
+      //"../..",
       "node_modules",
       "truffle-conflux-core",
       "index.js"
@@ -56,7 +56,10 @@ module.exports = {
   devtool: "source-map",
   module: {
     rules: [
-      { test: /\.js$/, use: "shebang-loader" },
+      //TODO
+      //{ test: /\.js$/, use: "shebang-loader" },
+      //{ test: /\.js$/, use: [{ loader: "shebang-loader" }]},
+      { test: /\.js$/, use: [{ loader: require.resolve("shebang-loader") }] },
       { test: /rx\.lite\.aggregates\.js/, use: "imports-loader?define=>false" }
     ]
   },
@@ -96,7 +99,7 @@ module.exports = {
       {
         from: path.join(
           __dirname,
-          "../..",
+          //    "../..",
           "node_modules",
           "truffle-conflux-core",
           "lib",
@@ -107,7 +110,7 @@ module.exports = {
       {
         from: path.join(
           __dirname,
-          "../..",
+          //   "../..",
           "node_modules",
           "truffle-conflux-core",
           "lib",
@@ -118,7 +121,7 @@ module.exports = {
       {
         from: path.join(
           __dirname,
-          "../..",
+          //  "../..",
           "node_modules",
           "truffle-conflux-core",
           "lib",
@@ -129,7 +132,7 @@ module.exports = {
       {
         from: path.join(
           __dirname,
-          "../..",
+          // "../..",
           "node_modules",
           "truffle-conflux-core",
           "lib",
@@ -140,7 +143,7 @@ module.exports = {
       {
         from: path.join(
           __dirname,
-          "../..",
+          //"../..",
           "node_modules",
           "truffle-conflux-core",
           "lib",
@@ -151,7 +154,7 @@ module.exports = {
       {
         from: path.join(
           __dirname,
-          "../..",
+          //"../..",
           "node_modules",
           "truffle-conflux-core",
           "lib",
@@ -162,7 +165,7 @@ module.exports = {
       {
         from: path.join(
           __dirname,
-          "../..",
+          //"../..",
           "node_modules",
           "truffle-conflux-core",
           "lib",
@@ -173,7 +176,7 @@ module.exports = {
       {
         from: path.join(
           __dirname,
-          "../..",
+          //"../..",
           "node_modules",
           "truffle-conflux-core",
           "lib",
@@ -184,7 +187,7 @@ module.exports = {
       {
         from: path.join(
           __dirname,
-          "../..",
+          //"../..",
           "node_modules",
           "truffle-conflux-core",
           "lib",
@@ -195,7 +198,7 @@ module.exports = {
       {
         from: path.join(
           __dirname,
-          "../..",
+          //"../..",
           "node_modules",
           "truffle-conflux-core",
           "lib",
@@ -206,7 +209,7 @@ module.exports = {
       {
         from: path.join(
           __dirname,
-          "../..",
+          //"../..",
           "node_modules",
           "truffle-conflux-core",
           "lib",
@@ -217,7 +220,7 @@ module.exports = {
       {
         from: path.join(
           __dirname,
-          "../..",
+          //"../..",
           "node_modules",
           "truffle-conflux-core",
           "lib",
@@ -228,7 +231,7 @@ module.exports = {
       {
         from: path.join(
           __dirname,
-          "../..",
+          //"../..",
           "node_modules",
           "truffle-conflux-core",
           "lib",
@@ -239,7 +242,7 @@ module.exports = {
       {
         from: path.join(
           __dirname,
-          "../..",
+          //"../..",
           "node_modules",
           "truffle-conflux-core",
           "lib",
@@ -250,7 +253,7 @@ module.exports = {
       {
         from: path.join(
           __dirname,
-          "../..",
+          //"../..",
           "node_modules",
           "truffle-conflux-core",
           "lib",
@@ -261,7 +264,7 @@ module.exports = {
       {
         from: path.join(
           __dirname,
-          "../..",
+          //"../..",
           "node_modules",
           "truffle-conflux-core",
           "lib",
@@ -272,7 +275,7 @@ module.exports = {
       {
         from: path.join(
           __dirname,
-          "../..",
+          //"../..",
           "node_modules",
           "truffle-conflux-core",
           "lib",
@@ -290,17 +293,17 @@ module.exports = {
   ],
   resolve: {
     alias: {
-      "ws": path.join(__dirname, "./nil.js"),
+      ws: path.join(__dirname, "./nil.js"),
       "bn.js": path.join(
         __dirname,
-        "../..",
+        //"../..",
         "node_modules",
         "bn.js",
         "lib",
         "bn.js"
       ),
       "original-fs": path.join(__dirname, "./nil.js"),
-      "scrypt": "js-scrypt"
+      scrypt: "js-scrypt"
     }
   },
   stats: {

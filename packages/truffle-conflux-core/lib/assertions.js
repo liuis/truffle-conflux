@@ -1,4 +1,4 @@
-var Web3 = require("web3");
+var Web3 = require("conflux-web");
 var web3 = new Web3();
 
 module.exports = function(chai, utils) {

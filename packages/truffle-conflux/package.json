@@ -53,6 +53,7 @@
     "truffle-conflux-contract": "file:../truffle-conflux-contract",
     "truffle-conflux-core": "file:../truffle-conflux-core",
     "truffle-conflux-debugger": "file:../truffle-conflux-debugger",
+    "truffle-conflux-environment": "file:../truffle-conflux-environment",
     "webpack": "^2.7.0",
     "webpack-bundle-analyzer": "^3.0.3",
     "webpack-cli": "^3.3.9",
