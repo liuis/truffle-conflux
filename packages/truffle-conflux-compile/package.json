@@ -1,7 +1,7 @@
 {
   "name": "truffle-conflux-compile",
   "version": "0.0.2-alpha.0",
-  "description": "Compiler helper and artifact manager",
+  "description": "Compiler helper and artifact manager, truffle-conflux-resolver TODO delete ",
   "main": "index.js",
   "dependencies": {
     "colors": "^1.1.2",
@@ -26,8 +26,7 @@
     "chai": "^4.2.0",
     "mocha": "5.2.0",
     "sinon": "^7.2.2",
-    "tmp": "0.0.33",
-    "truffle-conflux-resolver": "../truffle-conflux-resolver"
+    "tmp": "0.0.33"
   },
   "babel": {
     "presets": [

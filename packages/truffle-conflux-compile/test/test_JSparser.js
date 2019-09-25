@@ -1,3 +1,4 @@
+/*
 const path = require("path");
 const assert = require("assert");
 const Resolver = require("truffle-conflux-resolver");
@@ -91,3 +92,4 @@ describe("JSparser", () => {
     });
   }).timeout(3000);
 });
+*/

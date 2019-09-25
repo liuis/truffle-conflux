@@ -15,11 +15,11 @@
     "conflux-web": "1.2.2-alpha.0",
     "ganache-core": "2.5.7",
     "node-ipc": "^9.1.1",
-    "truffle-conflux-artifactor": "file:../truffle-conflux-artifactor",
+    "truffle-conflux-artifactor": "0.0.2-alpha.0",
     "truffle-conflux-error": "0.0.2-alpha.0",
     "truffle-conflux-expect": "0.0.2-alpha.0",
     "truffle-conflux-interface-adapter": "0.0.2-alpha.0",
-    "truffle-conflux-resolver": "file:../truffle-conflux-resolver"
+    "truffle-conflux-resolver": "0.0.2-alpha.2"
   },
   "devDependencies": {
     "debug": "^4.1.0"

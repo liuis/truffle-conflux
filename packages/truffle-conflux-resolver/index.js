@@ -3,9 +3,9 @@ var NPMSource = require("./npm");
 var GlobalNPMSource = require("./globalnpm");
 var FSSource = require("./fs");
 var whilst = require("async/whilst");
-var contract = require("../truffle-conflux-contract");
-var expect = require("../truffle-conflux-expect");
-var provision = require("../truffle-conflux-provisioner");
+var contract = require("truffle-conflux-contract");
+var expect = require("truffle-conflux-expect");
+var provision = require("truffle-conflux-provisioner");
 
 function Resolver(options) {
   expect.options(options, ["working_directory", "contracts_build_directory"]);

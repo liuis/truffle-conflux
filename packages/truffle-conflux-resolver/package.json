@@ -1,6 +1,6 @@
 {
   "name": "truffle-conflux-resolver",
-  "version": "0.0.2-alpha.0",
+  "version": "0.0.2-alpha.2",
   "description": "Resolve contract dependencies given multiple configurable dependency sources",
   "main": "index.js",
   "scripts": {
@@ -24,15 +24,14 @@
     "detect-installed": "^2.0.4",
     "get-installed-path": "^4.0.8",
     "truffle-conflux-expect": "0.0.2-alpha.0",
+    "truffle-conflux-contract": "0.0.2-alpha.0",
     "truffle-conflux-provisioner": "0.0.2-alpha.0"
   },
   "devDependencies": {
     "mocha": "5.2.0",
     "sinon": "^7.3.1"
   },
-  "peerDependencies": {
-    "truffle-conflux-contract": "file:../truffle-conflux-contract"
-  },
+  "peerDependencies": {},
   "publishConfig": {
     "access": "public"
   },

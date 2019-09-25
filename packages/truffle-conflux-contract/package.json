@@ -38,7 +38,7 @@
     "ganache-core": "2.5.7",
     "mocha": "5.2.0",
     "temp": "^0.8.3",
-    "truffle-conflux-compile": "file:../truffle-conflux-compile",
+    "truffle-conflux-compile": "0.0.2-alpha.0",
     "uglify-es": "^3.3.9"
   },
   "keywords": [

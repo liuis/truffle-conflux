@@ -8,14 +8,15 @@
   "bugs": {
     "url": "https://github.com/trufflesuite/truffle-conflux-deployer/issues"
   },
-  "version": "0.0.2-alpha.0",
+  "version": "0.0.2-alpha.1",
   "main": "index.js",
   "scripts": {
     "test": "mocha --no-warnings --timeout 10000 --exit"
   },
   "dependencies": {
     "emittery": "^0.4.0",
-    "truffle-conflux-contract": "file:../truffle-conflux-contract",
+    "truffle-conflux-contract": "0.0.2-alpha.0",
+    "truffle-conflux-legacy-system": "0.0.2-alpha.0",
     "truffle-conflux-expect": "0.0.2-alpha.0"
   },
   "devDependencies": {
@@ -23,7 +24,7 @@
     "ganache-core": "2.5.7",
     "mocha": "5.2.0",
     "truffle-conflux-reporters": "0.0.2-alpha.0",
-    "truffle-conflux-workflow-compile": "file:../truffle-conflux-workflow-compile"
+    "truffle-conflux-workflow-compile": "0.0.2-alpha.0"
   },
   "keywords": [
     "contracts",

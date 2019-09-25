@@ -1,3 +1,4 @@
+/*
 const debug = require("debug")("compile:test:test_supplier");
 const fse = require("fs-extra");
 const path = require("path");
@@ -288,3 +289,4 @@ describe("CompilerSupplier", function() {
     });
   });
 });
+*/

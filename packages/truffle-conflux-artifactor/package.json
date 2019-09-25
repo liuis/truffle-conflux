@@ -23,7 +23,7 @@
     "mocha": "5.2.0",
     "require-nocache": "^1.0.0",
     "temp": "^0.8.3",
-    "truffle-conflux-contract": "file:../truffle-conflux-contract"
+    "truffle-conflux-contract": "0.0.2-alpha.0"
   },
   "publishConfig": {
     "access": "public"
